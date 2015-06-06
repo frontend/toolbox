@@ -13,11 +13,11 @@ module.exports = function() {
   */
   gulp.task('img-optim', function() {
     return gulp.src(config.images)
-      .pipe($.imagemin({
-        progressive: true,
-        use: [pngquant()]
-      }))
-      .pipe($.size({title: 'IMAGES'}))
+      // .pipe($.imagemin({
+      //   progressive: true,
+      //   use: [pngquant()]
+      // }))
+      // .pipe($.size({title: 'IMAGES'}))
       .pipe(gulp.dest(config.build + 'img'));
   });
 

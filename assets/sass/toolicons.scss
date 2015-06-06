@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "toolicons";
+  src: url('../fonts/toolicons.eot');
+  src: url('../fonts/toolicons.eot?#iefix') format('eot'),
+    url('../fonts/toolicons.woff') format('woff'),
+    url('../fonts/toolicons.ttf') format('truetype'),
+    url('../fonts/toolicons.svg#toolicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.toolicons:before {
+  display: inline-block;
+  font-family: "toolicons";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.toolicons-lg {
+  font-size: 1.3333333333333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.toolicons-2x { font-size: 2em; }
+.toolicons-3x { font-size: 3em; }
+.toolicons-4x { font-size: 4em; }
+.toolicons-5x { font-size: 5em; }
+.toolicons-fw {
+  width: 1.2857142857142858em;
+  text-align: center;
+}
+
+.toolicons-atomic:before { content: "\E001" }
+.toolicons-responsive:before { content: "\E002" }
+.toolicons-sass:before { content: "\E003" }
+.toolicons-styleguide:before { content: "\E004" }
+.toolicons-sub:before { content: "\E005" }
+.toolicons-task:before { content: "\E006" }
+.toolicons-template:before { content: "\E007" }
+.toolicons-test:before { content: "\E008" }

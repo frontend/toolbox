@@ -10,10 +10,6 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width">
-
-    {{#if fabricator}}
-      <link rel="stylesheet" href="./build/css/styleguide.css">
-    {{/if}}
     <link rel="stylesheet" href="{{#if fabricator}}./{{else}}./../{{/if}}build/css/vendors.min.css">
     <link rel="stylesheet" href="{{#if fabricator}}./{{else}}./../{{/if}}build/css/main.css">
 
@@ -22,20 +18,7 @@
     <![endif]-->
   </head>
   <body>
-
-    {{#if fabricator}}
-      {{> f-icons}}
-      {{> f-menu}}
-      <div class="f-container">
-        {{> f-control-bar}}
-    {{/if}}
-
     {% body %}
-
-    {{#if fabricator}}
-      </div>
-      <script src="{{#if fabricator}}./{{else}}./../{{/if}}build/js/styleguide.min.js"></script>
-    {{/if}}
     <script src="{{#if fabricator}}./{{else}}./../{{/if}}build/js/vendors.min.js"></script>
     <script src="{{#if fabricator}}./{{else}}./../{{/if}}build/js/main.js"></script>
   </body>
