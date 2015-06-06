@@ -16,11 +16,17 @@
 .congressy {
   background: $congress-blue;
   color: $white;
-  a {color: $white;}
+  a {
+    color: $white;
+    font-weight: bold;
+  }
 }
 
 .blacky {
   background: $black;
   color: $white;
-  a {color: $white;}
+  a {
+    color: $white;
+    font-weight: bold;
+  }
 }
