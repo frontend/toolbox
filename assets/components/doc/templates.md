@@ -8,8 +8,8 @@ There is 2 front-matter options who change the builded path or simply build a co
 
 ````html
 ---
-dest: custom/build/path
-dest-copy: custom/copy/path
+dest: custom/build/path/custom.php
+dest-copy: custom/copy/path/custom-copy.twig
 ---
 <!-- Your template's markup -->
 ````
