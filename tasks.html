@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./../build/css/vendors.min.css">
+    <link rel="stylesheet" href="./../build/css/main.css">
+
+    <!--[if lt IE 9]>
+      <script src="./../build/js/polyfills.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="blacky text-center preheader">
+      <a href="https://github.com/frontend/generator-toolbox"><i class="toolicons toolicons-github"></i> Github repository</a>
+    </div><header class="congressy">
+      <div class="container">
+        <div class="spacer spacer-md"></div>
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="row">
+              <div class="col-xs-4 col-xs-offset-4 col-md-2 col-md-offset-5">
+                <a href="index.html">
+                  <img src="../build/svg/tools.svg" onerror="this.onerror=null; this.src='../build/img/tools.png'" alt="toolbox" class="img-responsive" />
+                </a>
+              </div>
+            </div>
+            <h3 class="text-center">Documentation</h3>
+          </div>
+        </div>
+        <div class="spacer spacer-sm"></div>
+      </div>
+    </header>
+    
+    <div class="spacer"></div><div class="container">
+  <div class="col-sm-4 text-right">
+    <div class="row sidebar">
+      <div class="col-sm-11">
+        <h3>Getting started</h3>
+        <ul class="list-unstyled">
+          <li><a href="installation.html">Installation & dependencies</a></li>
+          <li><a href="generators.html">Generator and sub generators</a></li>
+          <li><a href="file-structure.html">File structure</a></li>
+          <li><a href="configuration.html">Configuration</a></li>
+          <li><a href="tasks.html">Tasks</a></li>
+        </ul>
+        <h3>Markup</h3>
+        <ul class="list-unstyled">
+          <li><a href="components.html">Components</a></li>
+          <li><a href="data.html">Data</a></li>
+          <li><a href="layout.html">Base layouts</a></li>
+          <li><a href="templates.html">Templates</a></li>
+        </ul>
+    
+        <h3>JavaScript & testing</h3>
+        <ul class="list-unstyled">
+          <li><a href="regression.html">Regression tests</a></li>
+          <li><a href="unit.html">Unit tests</a></li>
+          <li><a href="navigation.html">Navigation tests</a></li>
+        </ul>
+        <h3>Styleguide</h3>
+        <ul class="list-unstyled">
+          <li><a href="overview.html">Overview</a></li>
+          <li><a href="docs.html">Docs</a></li>
+        </ul>
+        <h3>More</h3>
+        <ul class="list-unstyled">
+          <li><a href="acknowledgements.html">Acknowledgements</a></li>
+          <li><a href="license.html">License</a></li>
+        </ul>
+    
+      </div>
+    </div>  </div>
+  <div class="col-sm-8">
+<h1>Tasks</h1>
+<p><strong>Toolbox</strong> gives you few useful Gulp tasks :</p>
+<h2>Init</h2>
+<p>It will add the last Bootstrap variables file to your project.</p>
+<pre><code class="lang-bash">$ gulp init
+</code></pre>
+<h2>Default and build</h2>
+<p>It build all your project using all the following tasks. You can add a production parameters when you build in production server. It will optimize your stylesheets for example.</p>
+<pre><code class="lang-bash">$ gulp
+$ gulp build
+$ gulp build --production
+</code></pre>
+<h2>Vendors</h2>
+<p>It takes all vendors files specified in <code>gulp_config.json</code>, concat and build it into the right directories.</p>
+<pre><code class="lang-bash">$ gulp vendors
+</code></pre>
+<h2>Images</h2>
+<pre><code class="lang-bash">$ gulp img
+</code></pre>
+<h2>Styles</h2>
+<p>It build all your <code>.scss</code> files with sourcemaps or not if <code>--production</code> is defined.</p>
+<pre><code class="lang-bash">$ gulp init
+</code></pre>
+<h2>Scripts</h2>
+<p>It lint and build your JavaScript files.</p>
+<pre><code class="lang-bash">$ gulp scripts
+</code></pre>
+<h2>Icons</h2>
+<p>It takes all the svg in the icon directory and build it into an iconfont and a related stylesheet.</p>
+<pre><code class="lang-bash">$ gulp icons
+</code></pre>
+<h2>Clean</h2>
+<p>It cleans all the build directories.</p>
+<pre><code class="lang-bash">$ gulp clean
+</code></pre>
+<h2>Styleguide</h2>
+<p>It build your styleguide and the specific stylesheets and/or scripts.</p>
+<pre><code class="lang-bash">$ gulp styleguide
+</code></pre>
+<h2>Serve</h2>
+<p>This is the <strong>most useful task</strong> during your development process. It runs BrowserSync to automatically refresh your browser pages, build all to scripts/stylesheets when they changes and rebuild the styleguide when components are uptated.</p>
+<pre><code class="lang-bash">$ gulp serve
+</code></pre>
+<h2>Deploy</h2>
+<p>It deploy your defined directory into a gh-pages git branch. (Github required)</p>
+<pre><code class="lang-bash">$ gulp deploy
+</code></pre>
+<h2>Testing</h2>
+<p>You can launch the test with gulp.</p>
+<p><strong>Regression tests :</strong>µ</p>
+<p>First, you have to generate references :</p>
+<pre><code class="lang-bash">$ gulp <span class="hljs-built_in">test</span>:regression:references
+</code></pre>
+<p>then, you can launch the test :</p>
+<pre><code class="lang-bash">$ gulp <span class="hljs-built_in">test</span>:regression
+</code></pre>
+<p><strong>Unit tests :</strong></p>
+<pre><code class="lang-bash">$ gulp <span class="hljs-built_in">test</span>:unit
+</code></pre>
+<p><strong>Navigation tests :</strong></p>
+<pre><code class="lang-bash">$ gulp <span class="hljs-built_in">test</span>:navigation
+</code></pre>
+  </div>
+</div>
+<div class="spacer"></div>
+<footer class="trinidady">
+  <div class="container text-center">
+    <div class="spacer spacer-sm"></div>
+    Build with <i class="glyphicon glyphicon-heart"></i> by the <a href="https://github.com/frontend">frontend team</a><br>
+    Due to the constant quest of innovation at <a href="http://antistatique.net">Antistatique</a>
+    <div class="spacer spacer-sm"></div>
+  </div>
+</footer>
+    <script src="./../build/js/vendors.min.js"></script>
+    <script src="./../build/js/main.js"></script>
+  </body>
+</html>

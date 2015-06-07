@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./../build/css/vendors.min.css">
+    <link rel="stylesheet" href="./../build/css/main.css">
+
+    <!--[if lt IE 9]>
+      <script src="./../build/js/polyfills.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="blacky text-center preheader">
+      <a href="https://github.com/frontend/generator-toolbox"><i class="toolicons toolicons-github"></i> Github repository</a>
+    </div><header class="congressy">
+      <div class="container">
+        <div class="spacer spacer-md"></div>
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="row">
+              <div class="col-xs-4 col-xs-offset-4 col-md-2 col-md-offset-5">
+                <a href="index.html">
+                  <img src="../build/svg/tools.svg" onerror="this.onerror=null; this.src='../build/img/tools.png'" alt="toolbox" class="img-responsive" />
+                </a>
+              </div>
+            </div>
+            <h3 class="text-center">Documentation</h3>
+          </div>
+        </div>
+        <div class="spacer spacer-sm"></div>
+      </div>
+    </header>
+    
+    <div class="spacer"></div><div class="container">
+  <div class="col-sm-4 text-right">
+    <div class="row sidebar">
+      <div class="col-sm-11">
+        <h3>Getting started</h3>
+        <ul class="list-unstyled">
+          <li><a href="installation.html">Installation & dependencies</a></li>
+          <li><a href="generators.html">Generator and sub generators</a></li>
+          <li><a href="file-structure.html">File structure</a></li>
+          <li><a href="configuration.html">Configuration</a></li>
+          <li><a href="tasks.html">Tasks</a></li>
+        </ul>
+        <h3>Markup</h3>
+        <ul class="list-unstyled">
+          <li><a href="components.html">Components</a></li>
+          <li><a href="data.html">Data</a></li>
+          <li><a href="layout.html">Base layouts</a></li>
+          <li><a href="templates.html">Templates</a></li>
+        </ul>
+    
+        <h3>JavaScript & testing</h3>
+        <ul class="list-unstyled">
+          <li><a href="regression.html">Regression tests</a></li>
+          <li><a href="unit.html">Unit tests</a></li>
+          <li><a href="navigation.html">Navigation tests</a></li>
+        </ul>
+        <h3>Styleguide</h3>
+        <ul class="list-unstyled">
+          <li><a href="overview.html">Overview</a></li>
+          <li><a href="docs.html">Docs</a></li>
+        </ul>
+        <h3>More</h3>
+        <ul class="list-unstyled">
+          <li><a href="acknowledgements.html">Acknowledgements</a></li>
+          <li><a href="license.html">License</a></li>
+        </ul>
+    
+      </div>
+    </div>  </div>
+  <div class="col-sm-8">
+<h1>Generator and sub generators</h1>
+<h2>Bootstraping projects with Toolbox</h2>
+<p>First, you have to go in your project directory :</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">cd</span> somewhere/over/the/rainbow/
+</code></pre>
+<p>Then, let the magic happend :</p>
+<pre><code class="lang-bash">$ yo toolbox
+</code></pre>
+<p>Some questions will be asked of you :</p>
+<ul>
+<li><strong>What's the name of your project ?</strong> (default = Toolbox) You have to give a name to your project. It will be used in the dependencies configuration files.</li>
+<li><strong>What would you like to use in your project ?</strong> (default = All) You have to choose to use or not <a href="http://gulpjs.com">GulpJS</a>, <a href="http://getbootstrap.com/">Bootstrap</a>, Tests environment and <a href="http://fbrctr.github.io">Fabricator</a>.</li>
+<li><strong>Where would you like to put your assets ?</strong> (default = assets/) By default, assets will be put at the root, but you can specify another path. FOr example to your thene directory.</li>
+<li><strong>Where would you like to put your build ?</strong> (default = build/) Same as assets ;)</li>
+</ul>
+<p>After ansering all the questions, Toolbox will install all Bower and npm dependencies. You can skip this part with the <code>--skip-install</code> parameter:</p>
+<pre><code class="lang-bash">$ yo toolbox --skip-install
+</code></pre>
+<h2>Sub generators</h2>
+<h3>To add a new component</h3>
+<p>Adding a new component can be redundant, but <strong>Toolbox</strong> do it for you. Basically, it add the <code>.hbs</code> component file in the right directory. Same thing for the related <code>.scss</code> file. And finally, it import the stylesheet into the <code>main.scss</code> file.</p>
+<p>Just type :</p>
+<pre><code class="lang-bash">$ yo toolbox:component
+</code></pre>
+<p>and choose what kind of component is it and how do you name it.</p>
+<h3>To add new script file</h3>
+<p>To encourage you testing your scripts, the script sub generator will create the JavaScript file and the related test file.</p>
+<p>Just type :</p>
+<pre><code class="lang-bash">$ yo toolbox:script
+</code></pre>
+<p>and you can choose between jQuery script or vanilla JS.</p>
+  </div>
+</div>
+<div class="spacer"></div>
+<footer class="trinidady">
+  <div class="container text-center">
+    <div class="spacer spacer-sm"></div>
+    Build with <i class="glyphicon glyphicon-heart"></i> by the <a href="https://github.com/frontend">frontend team</a><br>
+    Due to the constant quest of innovation at <a href="http://antistatique.net">Antistatique</a>
+    <div class="spacer spacer-sm"></div>
+  </div>
+</footer>
+    <script src="./../build/js/vendors.min.js"></script>
+    <script src="./../build/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./../build/css/vendors.min.css">
+    <link rel="stylesheet" href="./../build/css/main.css">
+
+    <!--[if lt IE 9]>
+      <script src="./../build/js/polyfills.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="blacky text-center preheader">
+      <a href="https://github.com/frontend/generator-toolbox"><i class="toolicons toolicons-github"></i> Github repository</a>
+    </div><header class="congressy">
+      <div class="container">
+        <div class="spacer spacer-md"></div>
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="row">
+              <div class="col-xs-4 col-xs-offset-4 col-md-2 col-md-offset-5">
+                <a href="index.html">
+                  <img src="../build/svg/tools.svg" onerror="this.onerror=null; this.src='../build/img/tools.png'" alt="toolbox" class="img-responsive" />
+                </a>
+              </div>
+            </div>
+            <h3 class="text-center">Documentation</h3>
+          </div>
+        </div>
+        <div class="spacer spacer-sm"></div>
+      </div>
+    </header>
+    
+    <div class="spacer"></div><div class="container">
+  <div class="col-sm-4 text-right">
+    <div class="row sidebar">
+      <div class="col-sm-11">
+        <h3>Getting started</h3>
+        <ul class="list-unstyled">
+          <li><a href="installation.html">Installation & dependencies</a></li>
+          <li><a href="generators.html">Generator and sub generators</a></li>
+          <li><a href="file-structure.html">File structure</a></li>
+          <li><a href="configuration.html">Configuration</a></li>
+          <li><a href="tasks.html">Tasks</a></li>
+        </ul>
+        <h3>Markup</h3>
+        <ul class="list-unstyled">
+          <li><a href="components.html">Components</a></li>
+          <li><a href="data.html">Data</a></li>
+          <li><a href="layout.html">Base layouts</a></li>
+          <li><a href="templates.html">Templates</a></li>
+        </ul>
+    
+        <h3>JavaScript & testing</h3>
+        <ul class="list-unstyled">
+          <li><a href="regression.html">Regression tests</a></li>
+          <li><a href="unit.html">Unit tests</a></li>
+          <li><a href="navigation.html">Navigation tests</a></li>
+        </ul>
+        <h3>Styleguide</h3>
+        <ul class="list-unstyled">
+          <li><a href="overview.html">Overview</a></li>
+          <li><a href="docs.html">Docs</a></li>
+        </ul>
+        <h3>More</h3>
+        <ul class="list-unstyled">
+          <li><a href="acknowledgements.html">Acknowledgements</a></li>
+          <li><a href="license.html">License</a></li>
+        </ul>
+    
+      </div>
+    </div>  </div>
+  <div class="col-sm-8">
+<h1>Navigation tests</h1>
+<p>To be sure that all the interactions implemented in your project works, <strong>the navigation tests are the best way to keep everything under control</strong>.</p>
+<p>For navigation testing, we are using <a href="http://casperjs.org/">CasperJS</a>. This tool is pretty easy to use and you can do almost everything that a normal user can do.</p>
+<p>For example :</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Give a name to your test suite and the amount of tests</span>
+casper.test.begin(<span class="hljs-string">'Demo testing on wikipedia'</span>, <span class="hljs-number">2</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">suite</span>(<span class="hljs-params">test</span>) </span>{
+
+  <span class="hljs-comment">// Start CasperJS on a defined url</span>
+  casper.start(<span class="hljs-string">"http://en.wikipedia.org/wiki/PhantomJS"</span>);
+
+  <span class="hljs-comment">// Test 1 - check if the title is correct</span>
+  casper.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    test.assertTitle(<span class="hljs-string">"PhantomJS - Wikipedia, the free encyclopedia"</span>, <span class="hljs-string">"Article title is ok"</span>);
+  });
+
+  <span class="hljs-comment">// Go to the homepage</span>
+  casper.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">this</span>.click(<span class="hljs-string">'.mw-wiki-logo'</span>);
+  });
+
+  <span class="hljs-comment">// Test 2 - retest the title to be sure that we are on the homepage.</span>
+  casper.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    test.assertTitle(<span class="hljs-string">"Wikipedia, the free encyclopedia"</span>, <span class="hljs-string">"Homepage title is ok"</span>);
+  });
+
+  <span class="hljs-comment">// After defining every action, run the tests</span>
+  casper.run(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    test.done();
+  });
+});
+
+</code></pre>
+<hr>
+<p>Here there is a useful <strong>cheatsheet</strong> from <a href="https://gentlenode.com/journal/casperjs-2-cheatsheet-with-phantomjs-and-spooky/8">gentlnode.com</a> :</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> casper = <span class="hljs-built_in">require</span>(<span class="hljs-string">'casper'</span>).create({
+  clientScripts: [
+    <span class="hljs-string">'includes/jquery.js'</span>,
+    <span class="hljs-string">'includes/underscore.js'</span>
+  ],
+  exitOnError: <span class="hljs-literal">true</span>,
+  httpStatusHandlers: { },
+  logLevel: <span class="hljs-string">"error"</span>,
+  onAlert: <span class="hljs-literal">null</span>,
+  onDie: <span class="hljs-literal">null</span>,
+  onError: <span class="hljs-literal">null</span>,
+  onLoadError: <span class="hljs-literal">null</span>,
+  onPageInitialized: <span class="hljs-literal">null</span>,
+  onResourceReceived: <span class="hljs-literal">null</span>,
+  onResourceRequested: <span class="hljs-literal">null</span>,
+  onStepComplete: <span class="hljs-literal">null</span>,
+  onStepTimeout: <span class="hljs-literal">null</span>,
+  onTimeout: <span class="hljs-literal">null</span>,
+  onWaitTimeout: <span class="hljs-literal">null</span>,
+  page: <span class="hljs-literal">null</span>,
+  pageSettings: {
+    javascriptEnabled: <span class="hljs-literal">true</span>,
+    loadImages: <span class="hljs-literal">false</span>,
+    loadPlugins: <span class="hljs-literal">false</span>,
+    localToRemoteUrlAccessEnabled: <span class="hljs-literal">false</span>,
+    userAgent: <span class="hljs-string">"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5)"</span>,
+    userName: <span class="hljs-literal">null</span>,
+    password: <span class="hljs-literal">null</span>,
+    XSSAuditingEnabled: <span class="hljs-literal">false</span>,
+  },
+  remoteScripts: [ ],
+  safeLogs: [ ],
+  stepTimeout: <span class="hljs-literal">null</span>,
+  timeout: <span class="hljs-literal">null</span>,
+  verbose: <span class="hljs-literal">true</span>,
+  viewportSize: <span class="hljs-literal">null</span>,
+  retryTimeout: <span class="hljs-number">100</span>,
+  waitTimeout: <span class="hljs-number">5000</span>,
+});
+
+casper.options.waitTimeout = <span class="hljs-number">1000</span>;  <span class="hljs-comment">// alter an option at runtime</span>
+
+casper.cli.args
+casper.cli.options
+casper.cli.has(); casper.cli.get(); casper.cli.drop();
+
+casper.back(),
+casper.exit([int status]);
+casper.forward();
+casper.run(fn onComplete[, int time]);
+casper.start(<span class="hljs-built_in">String</span> url[, <span class="hljs-built_in">Function</span> then]);
+casper.then(<span class="hljs-built_in">Function</span> then);
+casper.thenBypass(<span class="hljs-built_in">Number</span> nb);
+casper.thenBypassIf(Mixed condition, <span class="hljs-built_in">Number</span> nb);
+casper.thenBypassUnless(Mixed condition, <span class="hljs-built_in">Number</span> nb);
+casper.thenClick(<span class="hljs-built_in">String</span> selector[, <span class="hljs-built_in">Function</span> then]);
+casper.thenEvaluate(<span class="hljs-built_in">Function</span> fn[, arg1[, arg2[, ...]]]);
+casper.thenOpen(<span class="hljs-built_in">String</span> location[, mixed options]);
+casper.thenOpenAndEvaluate(<span class="hljs-built_in">String</span> location[, <span class="hljs-built_in">Function</span> then[, arg1[, arg2[, ...]]]);
+
+casper.base64encode(<span class="hljs-built_in">String</span> url[, <span class="hljs-built_in">String</span> method, <span class="hljs-built_in">Object</span> data]);
+casper.bypass(Numbr nb);
+
+casper.click(<span class="hljs-built_in">String</span> selector);
+casper.clickLabel(<span class="hljs-built_in">String</span> label[, <span class="hljs-built_in">String</span> tag]);
+
+casper.capture(<span class="hljs-built_in">String</span> targetFilepath, <span class="hljs-built_in">Object</span> clipRect);
+casper.captureBase64(<span class="hljs-built_in">String</span> format[, Mixed area]);
+casper.captureSelector(<span class="hljs-built_in">String</span> targetFile, <span class="hljs-built_in">String</span> selector);
+
+casper.clear();  <span class="hljs-comment">// clears the current page execution environment context</span>
+casper.debugHTML([<span class="hljs-built_in">String</span> selector, <span class="hljs-built_in">Boolean</span> outer]);
+casper.debugPage();
+casper.die(<span class="hljs-built_in">String</span> message[, int status]);
+
+casper.download(<span class="hljs-built_in">String</span> url, <span class="hljs-built_in">String</span> target[, <span class="hljs-built_in">String</span> method, <span class="hljs-built_in">Object</span> data]);
+
+casper.each(<span class="hljs-built_in">Array</span> array, <span class="hljs-built_in">Function</span> fn);
+casper.eachThen(<span class="hljs-built_in">Array</span> array,  <span class="hljs-built_in">Function</span> fn);
+
+casper.echo(<span class="hljs-built_in">String</span> message[, <span class="hljs-built_in">String</span> style]);
+casper.evaluate(<span class="hljs-built_in">Function</span> fn[, arg1[, arg2[, …]]]);
+casper.evaluateOrDie(<span class="hljs-built_in">Function</span> fn[, <span class="hljs-built_in">String</span> message]);
+casper.exists(<span class="hljs-built_in">String</span> selector);
+casper.fetchText(<span class="hljs-built_in">String</span> selector);
+
+casper.log(<span class="hljs-built_in">String</span> message[, <span class="hljs-built_in">String</span> level, <span class="hljs-built_in">String</span> space]);
+
+casper.fill(<span class="hljs-built_in">String</span> selector, <span class="hljs-built_in">Object</span> values[, <span class="hljs-built_in">Boolean</span> submit]);  <span class="hljs-comment">// fields are referenced by name attribute</span>
+casper.fillSelectors(<span class="hljs-built_in">String</span> selector, <span class="hljs-built_in">Object</span> values[, <span class="hljs-built_in">Boolean</span> submit]);  <span class="hljs-comment">// fields are referenced by css3 selectors</span>
+casper.fillXPath(<span class="hljs-built_in">String</span> selector, <span class="hljs-built_in">Object</span> values[, <span class="hljs-built_in">Boolean</span> submit]);  <span class="hljs-comment">// fields are referenced by XPath selectors</span>
+
+casper.getCurrentUrl();
+casper.getElement(s)Attribute(<span class="hljs-built_in">String</span> selector, <span class="hljs-built_in">String</span> attribute);
+casper.getElement(s)Bounds(<span class="hljs-built_in">String</span> selector);
+casper.getElement(s)Info(<span class="hljs-built_in">String</span> selector);
+casper.getFormValues(<span class="hljs-built_in">String</span> selector);
+casper.getGlobal(<span class="hljs-built_in">String</span> name);
+casper.getHTML([<span class="hljs-built_in">String</span> selector, <span class="hljs-built_in">Boolean</span> outer]);
+casper.getPageContent();
+casper.getTitle();
+
+casper.mouseEvent(<span class="hljs-built_in">String</span> type, <span class="hljs-built_in">String</span> selector);  <span class="hljs-comment">// mouseup, mousedown, click, mousemove, mouseover, mouseout</span>
+
+casper.open(<span class="hljs-built_in">String</span> location, <span class="hljs-built_in">Object</span> Settings);  <span class="hljs-comment">// settings: method, data, headers</span>
+casper.reload([<span class="hljs-built_in">Function</span> then];
+casper.repeat(int times, <span class="hljs-built_in">Function</span> then);
+casper.resourceExists(Mixed test);
+casper.sendKeys(Selector selector, <span class="hljs-built_in">String</span> keys[, <span class="hljs-built_in">Object</span> options]);  <span class="hljs-comment">// options: keepFocus, modifiers</span>
+casper.setHttpAuth(<span class="hljs-built_in">String</span> username, <span class="hljs-built_in">String</span> password);
+casper.status(<span class="hljs-built_in">Boolean</span> asString);
+
+casper.toString();
+casper.userAgent(<span class="hljs-built_in">String</span> agent);
+casper.viewport(<span class="hljs-built_in">Number</span> width, <span class="hljs-built_in">Number</span> height[, <span class="hljs-built_in">Function</span> then]);
+casper.visible(<span class="hljs-built_in">String</span> selector);
+
+casper.unwait();
+casper.wait(<span class="hljs-built_in">Number</span> timeout[, <span class="hljs-built_in">Function</span> then]);
+casper.waitFor(<span class="hljs-built_in">Function</span> testFx[, <span class="hljs-built_in">Function</span> then, <span class="hljs-built_in">Function</span> onTimeout, <span class="hljs-built_in">Number</span> timeout]);
+casper.waitForPopup(<span class="hljs-built_in">String</span>|<span class="hljs-built_in">RegExp</span> urlPattern[, <span class="hljs-built_in">Function</span> then, <span class="hljs-built_in">Function</span> onTimeout, <span class="hljs-built_in">Number</span> timeout]);
+casper.waitForResource(<span class="hljs-built_in">Function</span> testFx[, <span class="hljs-built_in">Function</span> then, <span class="hljs-built_in">Function</span> onTimeout, <span class="hljs-built_in">Number</span> timeout]);
+casper.waitForUrl(<span class="hljs-built_in">String</span>|<span class="hljs-built_in">RegExp</span> url[, <span class="hljs-built_in">Function</span> then, <span class="hljs-built_in">Function</span> onTimeout, <span class="hljs-built_in">Number</span> timeout]);
+casper.waitForSelector(<span class="hljs-built_in">String</span> selector[, <span class="hljs-built_in">Function</span> then, <span class="hljs-built_in">Function</span> onTimeout, <span class="hljs-built_in">Number</span> timeout]);
+casper.waitWhileSelector(<span class="hljs-built_in">String</span> selector[, <span class="hljs-built_in">Function</span> then, <span class="hljs-built_in">Function</span> onTimeout, <span class="hljs-built_in">Number</span> timeout]);
+casper.waitForSelectorTextChange(<span class="hljs-built_in">String</span> selectors[, <span class="hljs-built_in">Function</span> then, <span class="hljs-built_in">Function</span> onTimeout, <span class="hljs-built_in">Number</span> timeout]);
+casper.waitForText(<span class="hljs-built_in">String</span> text[, <span class="hljs-built_in">Function</span> then, <span class="hljs-built_in">Function</span> onTimeout, <span class="hljs-built_in">Number</span> timeout]);
+casper.waitUntilVisible(<span class="hljs-built_in">String</span> selector[, <span class="hljs-built_in">Function</span> then, <span class="hljs-built_in">Function</span> onTimeout, <span class="hljs-built_in">Number</span> timeout]);
+casper.waitWhileVisible(<span class="hljs-built_in">String</span> selector[, <span class="hljs-built_in">Function</span> then, <span class="hljs-built_in">Function</span> onTimeout, <span class="hljs-built_in">Number</span> timeout]);
+casper.warn(<span class="hljs-built_in">String</span> message);
+casper.withFrame(<span class="hljs-built_in">String</span>|<span class="hljs-built_in">Number</span> frameInfo, <span class="hljs-built_in">Function</span> then);
+casper.withPopup(Mixed popupInfo, <span class="hljs-built_in">Function</span> then);
+casper.zoom(<span class="hljs-built_in">Number</span> factor);
+
+casper.on(<span class="hljs-built_in">String</span> event, <span class="hljs-built_in">Function</span> then);
+casper.emit(<span class="hljs-built_in">String</span> event);
+
+<span class="hljs-comment">// Events referenced: back, capture.saved, click, complete.error, die, downloaded.file, error, exit, fill, forward,</span>
+<span class="hljs-comment">// http.auth, http.status.[code], load.started, load.failed, load.finished, log, mouse.click, mouse.down, mouse.move,</span>
+<span class="hljs-comment">// mouse.up, navigation.requested, open, page.created, page.error, page.initialized, page.resource.received, page.resource.requested,</span>
+<span class="hljs-comment">// popup.created, popup.loaded, popup.close, popup.created, remote.alert, remote.callback, remote.message, resource.received, resource.requested,</span>
+<span class="hljs-comment">// run.complete, run.start, starting, started, step.added, step.complete, step.created, step.error, step.start, step.timeout, timeout, url.changed,</span>
+<span class="hljs-comment">// viewport.changed, wait.done, wait.start, waitFor.timeout</span>
+
+casper.setFilter(<span class="hljs-built_in">String</span> event, <span class="hljs-built_in">Function</span> then);
+
+<span class="hljs-comment">// Filters referenced: capture.target_filename, echo.message, log.message, open.location, page.confirm, page.prompt</span>
+</code></pre>
+  </div>
+</div>
+<div class="spacer"></div>
+<footer class="trinidady">
+  <div class="container text-center">
+    <div class="spacer spacer-sm"></div>
+    Build with <i class="glyphicon glyphicon-heart"></i> by the <a href="https://github.com/frontend">frontend team</a><br>
+    Due to the constant quest of innovation at <a href="http://antistatique.net">Antistatique</a>
+    <div class="spacer spacer-sm"></div>
+  </div>
+</footer>
+    <script src="./../build/js/vendors.min.js"></script>
+    <script src="./../build/js/main.js"></script>
+  </body>
+</html>

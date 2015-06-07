@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./../build/css/vendors.min.css">
+    <link rel="stylesheet" href="./../build/css/main.css">
+
+    <!--[if lt IE 9]>
+      <script src="./../build/js/polyfills.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="blacky text-center preheader">
+      <a href="https://github.com/frontend/generator-toolbox"><i class="toolicons toolicons-github"></i> Github repository</a>
+    </div><header class="congressy">
+      <div class="container">
+        <div class="spacer spacer-md"></div>
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="row">
+              <div class="col-xs-4 col-xs-offset-4 col-md-2 col-md-offset-5">
+                <a href="index.html">
+                  <img src="../build/svg/tools.svg" onerror="this.onerror=null; this.src='../build/img/tools.png'" alt="toolbox" class="img-responsive" />
+                </a>
+              </div>
+            </div>
+            <h3 class="text-center">Documentation</h3>
+          </div>
+        </div>
+        <div class="spacer spacer-sm"></div>
+      </div>
+    </header>
+    
+    <div class="spacer"></div><div class="container">
+  <div class="col-sm-4 text-right">
+    <div class="row sidebar">
+      <div class="col-sm-11">
+        <h3>Getting started</h3>
+        <ul class="list-unstyled">
+          <li><a href="installation.html">Installation & dependencies</a></li>
+          <li><a href="generators.html">Generator and sub generators</a></li>
+          <li><a href="file-structure.html">File structure</a></li>
+          <li><a href="configuration.html">Configuration</a></li>
+          <li><a href="tasks.html">Tasks</a></li>
+        </ul>
+        <h3>Markup</h3>
+        <ul class="list-unstyled">
+          <li><a href="components.html">Components</a></li>
+          <li><a href="data.html">Data</a></li>
+          <li><a href="layout.html">Base layouts</a></li>
+          <li><a href="templates.html">Templates</a></li>
+        </ul>
+    
+        <h3>JavaScript & testing</h3>
+        <ul class="list-unstyled">
+          <li><a href="regression.html">Regression tests</a></li>
+          <li><a href="unit.html">Unit tests</a></li>
+          <li><a href="navigation.html">Navigation tests</a></li>
+        </ul>
+        <h3>Styleguide</h3>
+        <ul class="list-unstyled">
+          <li><a href="overview.html">Overview</a></li>
+          <li><a href="docs.html">Docs</a></li>
+        </ul>
+        <h3>More</h3>
+        <ul class="list-unstyled">
+          <li><a href="acknowledgements.html">Acknowledgements</a></li>
+          <li><a href="license.html">License</a></li>
+        </ul>
+    
+      </div>
+    </div>  </div>
+  <div class="col-sm-8">
+<h1>Components</h1>
+<p>Components offer the most modular approach of markup edition. The purpose <strong>is to never duplicate code</strong> and continuously reuse components across your project.</p>
+<h2>Hierarchy</h2>
+<p>The hierarchy is defined by the Brad Frost's <a href="http://bradfrost.com/blog/post/atomic-web-design/">atomic design</a> principles. Quickly, there is atoms who are used to compose molecules, molecules to compose organisms and organisms to compose templates.</p>
+<pre><code class="lang-plain"><span class="hljs-title">atoms</span> &gt; molecules &gt; organisms &gt; templates
+</code></pre>
+<p>With <a href="http://fbrctr.github.io">Fabricator</a> and the <a href="http://handlebarsjs.com">Handlebars</a> template engine, you can easily nest all this components together with a certain degree of logic.</p>
+<h2>A basic component</h2>
+<p>For example you can have a <code>button.hbs</code> :</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">button</span>&gt;</span>My button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+</code></pre>
+<p>And to use it in another component or template :</p>
+<pre><code class="lang-html">{{&gt; button }}
+</code></pre>
+<h2>Variable component</h2>
+<p>Most of the time, your component will change depending on context. So you can add variable inside your component:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">button</span>&gt;</span>{{#if button-content}}{{ button-content }}{{^}}My button{{/if}}<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+</code></pre>
+<p>There is a bit of <strong>conditional logic</strong> to display default content. I can also use a simple <code>content</code> variable, but after, we will see that <strong>naming variable is very important</strong> with more than one level of hierarchy.</p>
+<p>So in another component or template :</p>
+<pre><code class="lang-html">{{&gt; button button-content="My awesome button" }}
+</code></pre>
+<p>Variables can be <strong>String</strong>, <strong>Boolean</strong>, <strong>Array</strong> or <strong>Integer</strong>.</p>
+<h2>Components hierarchy</h2>
+<p>By nesting components, you can add magic in your code.</p>
+<p>For example you have a <code>button.hbs</code> atom :</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">button</span>&gt;</span>{{#if button-content}}{{ button-content }}{{^}}My button{{/if}}<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+</code></pre>
+<p>and a <code>search-form.hbs</code> molecule using default atom's value :</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-inline"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Search<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    {{&gt; input }}
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  {{&gt; button }}
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+</code></pre>
+<p>When you use it in a <strong>specific context</strong>, you can do something like :</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"navbar"</span>&gt;</span>
+  {{&gt; search-form button-content="Search" }}
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<h2>Front-matter context</h2>
+<p>You can also redefine variable in the front-matter.</p>
+<p>For example, you have (again) a button :</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">button{{#if</span> <span class="hljs-attribute">homepage</span>}} <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span><span class="hljs-value">{{</span>/<span class="hljs-attribute">if</span>}}&gt;</span>My button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+</code></pre>
+<p>So, in your template :</p>
+<pre><code class="lang-html">---
+homepage: true
+---
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container"</span>&gt;</span>
+  {{&gt; button }}
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<p>and the button will use the active class.</p>
+  </div>
+</div>
+<div class="spacer"></div>
+<footer class="trinidady">
+  <div class="container text-center">
+    <div class="spacer spacer-sm"></div>
+    Build with <i class="glyphicon glyphicon-heart"></i> by the <a href="https://github.com/frontend">frontend team</a><br>
+    Due to the constant quest of innovation at <a href="http://antistatique.net">Antistatique</a>
+    <div class="spacer spacer-sm"></div>
+  </div>
+</footer>
+    <script src="./../build/js/vendors.min.js"></script>
+    <script src="./../build/js/main.js"></script>
+  </body>
+</html>

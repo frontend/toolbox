@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./../build/css/vendors.min.css">
+    <link rel="stylesheet" href="./../build/css/main.css">
+
+    <!--[if lt IE 9]>
+      <script src="./../build/js/polyfills.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="blacky text-center preheader">
+      <a href="https://github.com/frontend/generator-toolbox"><i class="toolicons toolicons-github"></i> Github repository</a>
+    </div><header class="congressy">
+      <div class="container">
+        <div class="spacer spacer-md"></div>
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="row">
+              <div class="col-xs-4 col-xs-offset-4 col-md-2 col-md-offset-5">
+                <a href="index.html">
+                  <img src="../build/svg/tools.svg" onerror="this.onerror=null; this.src='../build/img/tools.png'" alt="toolbox" class="img-responsive" />
+                </a>
+              </div>
+            </div>
+            <h3 class="text-center">Documentation</h3>
+          </div>
+        </div>
+        <div class="spacer spacer-sm"></div>
+      </div>
+    </header>
+    
+    <div class="spacer"></div><div class="container">
+  <div class="col-sm-4 text-right">
+    <div class="row sidebar">
+      <div class="col-sm-11">
+        <h3>Getting started</h3>
+        <ul class="list-unstyled">
+          <li><a href="installation.html">Installation & dependencies</a></li>
+          <li><a href="generators.html">Generator and sub generators</a></li>
+          <li><a href="file-structure.html">File structure</a></li>
+          <li><a href="configuration.html">Configuration</a></li>
+          <li><a href="tasks.html">Tasks</a></li>
+        </ul>
+        <h3>Markup</h3>
+        <ul class="list-unstyled">
+          <li><a href="components.html">Components</a></li>
+          <li><a href="data.html">Data</a></li>
+          <li><a href="layout.html">Base layouts</a></li>
+          <li><a href="templates.html">Templates</a></li>
+        </ul>
+    
+        <h3>JavaScript & testing</h3>
+        <ul class="list-unstyled">
+          <li><a href="regression.html">Regression tests</a></li>
+          <li><a href="unit.html">Unit tests</a></li>
+          <li><a href="navigation.html">Navigation tests</a></li>
+        </ul>
+        <h3>Styleguide</h3>
+        <ul class="list-unstyled">
+          <li><a href="overview.html">Overview</a></li>
+          <li><a href="docs.html">Docs</a></li>
+        </ul>
+        <h3>More</h3>
+        <ul class="list-unstyled">
+          <li><a href="acknowledgements.html">Acknowledgements</a></li>
+          <li><a href="license.html">License</a></li>
+        </ul>
+    
+      </div>
+    </div>  </div>
+  <div class="col-sm-8">
+<h1>Unit testing</h1>
+<p>Unit testing is the best way to know if your code works or not. It <strong>decontextualized code</strong> to test it in a clean environment, without any “noise”.</p>
+<p>We are using <a href="http://mochajs.org/">Mocha</a> as test framework and <a href="http://chaijs.com/">Chai</a> for assertions. And because a lot of our frontend scripts are using <a href="http://jquery.com/">jQuery</a>, we are using <a href="https://github.com/tmpvar/jsdom">jsdom</a> for emulating the DOM.</p>
+<p>For example if you have a simple <code>main.js</code> jQuery script like :</p>
+<pre><code class="lang-javascript">(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$</span>)</span>{
+  $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+
+    <span class="hljs-comment">// append p.test in body</span>
+    $(<span class="hljs-string">'body'</span>).append(<span class="hljs-string">'&lt;p class="test"&gt;Test&lt;/p&gt;'</span>);
+
+    <span class="hljs-comment">// change color body on p.test click</span>
+    $(<span class="hljs-string">'.test'</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+      $(<span class="hljs-string">'body'</span>).css(<span class="hljs-string">'color'</span>, <span class="hljs-string">'red'</span>);
+    });
+
+  });
+}(jQuery));
+</code></pre>
+<p>your test will be like :</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> chai      = <span class="hljs-built_in">require</span>(<span class="hljs-string">"chai"</span>),
+    should    = chai.should(),
+    jsdom     = <span class="hljs-built_in">require</span>(<span class="hljs-string">"jsdom"</span>),
+    config        = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./../../gulp_config.json'</span>),
+    script    = <span class="hljs-string">'main.js'</span>;
+
+describe(<span class="hljs-string">'Testing main.js'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> $;
+
+  <span class="hljs-comment">// Run jQuery in your testing environment</span>
+  before(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    global.document = jsdom.jsdom(<span class="hljs-string">'&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;'</span>);
+    global.window = global.document.defaultView;
+    global.navigator = global.window.navigator;
+
+    $ = global.jQuery = <span class="hljs-built_in">require</span>(<span class="hljs-string">'jquery'</span>);
+    <span class="hljs-built_in">require</span>(<span class="hljs-string">'../../'</span> + config.assets + <span class="hljs-string">"js/"</span> + script);
+  })
+
+  <span class="hljs-comment">// Test 1</span>
+  it(<span class="hljs-string">'p.text should append in the body'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    $(<span class="hljs-string">'body .test'</span>).length.should.equal(<span class="hljs-number">1</span>);
+  });
+
+  <span class="hljs-comment">// Test 2</span>
+  it(<span class="hljs-string">'body color should be red when click on p.text'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    $(<span class="hljs-string">'.test'</span>).trigger(<span class="hljs-string">'click'</span>);
+    $(<span class="hljs-string">'body'</span>).css(<span class="hljs-string">'color'</span>).should.equal(<span class="hljs-string">'yellow'</span>);
+  });
+});
+
+</code></pre>
+<p>The script sub generator provide already a base file for unit testing.</p>
+<p>And finally, to start unit tests, just :</p>
+<pre><code class="lang-bash">$ gulp <span class="hljs-built_in">test</span>:unit
+</code></pre>
+  </div>
+</div>
+<div class="spacer"></div>
+<footer class="trinidady">
+  <div class="container text-center">
+    <div class="spacer spacer-sm"></div>
+    Build with <i class="glyphicon glyphicon-heart"></i> by the <a href="https://github.com/frontend">frontend team</a><br>
+    Due to the constant quest of innovation at <a href="http://antistatique.net">Antistatique</a>
+    <div class="spacer spacer-sm"></div>
+  </div>
+</footer>
+    <script src="./../build/js/vendors.min.js"></script>
+    <script src="./../build/js/main.js"></script>
+  </body>
+</html>
