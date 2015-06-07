@@ -1,6 +1,6 @@
 # Installation & dependencies
 
-### Requirements
+## Requirements
 
 First, you will need [NodeJS](https://nodejs.org) and [npm](https://npmjs.org/) installed in your system.
 
@@ -16,7 +16,7 @@ And finally, to use the **generator**, you have to install [Yeoman](http://yeoma
 $ npm install -g yo
 ````
 
-### Installation
+## Installation
 
 To install **Toolbox** :
 

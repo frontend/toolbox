@@ -2,7 +2,7 @@
 
 **Toolbox** gives you few useful Gulp tasks :
 
-### Init
+## Init
 
 It will add the last Bootstrap variables file to your project.
 
@@ -10,7 +10,7 @@ It will add the last Bootstrap variables file to your project.
 $ gulp init
 ````
 
-### Default and build
+## Default and build
 
 It build all your project using all the following tasks. You can add a production parameters when you build in production server. It will optimize your stylesheets for example.
 
@@ -20,7 +20,7 @@ $ gulp build
 $ gulp build --production
 ````
 
-### Vendors
+## Vendors
 
 It takes all vendors files specified in `gulp_config.json`, concat and build it into the right directories.
 
@@ -28,13 +28,13 @@ It takes all vendors files specified in `gulp_config.json`, concat and build it 
 $ gulp vendors
 ````
 
-### Images
+## Images
 
 ````bash
 $ gulp img
 ````
 
-### Styles
+## Styles
 
 It build all your `.scss` files with sourcemaps or not if `--production` is defined.
 
@@ -42,7 +42,7 @@ It build all your `.scss` files with sourcemaps or not if `--production` is defi
 $ gulp init
 ````
 
-### Scripts
+## Scripts
 
 It lint and build your JavaScript files.
 
@@ -50,7 +50,7 @@ It lint and build your JavaScript files.
 $ gulp scripts
 ````
 
-### Icons
+## Icons
 
 It takes all the svg in the icon directory and build it into an iconfont and a related stylesheet.
 
@@ -58,7 +58,7 @@ It takes all the svg in the icon directory and build it into an iconfont and a r
 $ gulp icons
 ````
 
-### Clean
+## Clean
 
 It cleans all the build directories.
 
@@ -66,7 +66,7 @@ It cleans all the build directories.
 $ gulp clean
 ````
 
-### Styleguide
+## Styleguide
 
 It build your styleguide and the specific stylesheets and/or scripts.
 
@@ -74,7 +74,7 @@ It build your styleguide and the specific stylesheets and/or scripts.
 $ gulp styleguide
 ````
 
-### Serve
+## Serve
 
 This is the **most useful task** during your development process. It runs BrowserSync to automatically refresh your browser pages, build all to scripts/stylesheets when they changes and rebuild the styleguide when components are uptated.
 
@@ -82,7 +82,7 @@ This is the **most useful task** during your development process. It runs Browse
 $ gulp serve
 ````
 
-### Deploy
+## Deploy
 
 It deploy your defined directory into a gh-pages git branch. (Github required)
 
@@ -90,7 +90,7 @@ It deploy your defined directory into a gh-pages git branch. (Github required)
 $ gulp deploy
 ````
 
-### Testing
+## Testing
 
 You can launch the test with gulp.
 

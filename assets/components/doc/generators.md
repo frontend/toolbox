@@ -1,6 +1,6 @@
 # Generator and sub generators
 
-### Bootstraping projects with Toolbox
+## Bootstraping projects with Toolbox
 
 First, you have to go in your project directory :
 
@@ -26,9 +26,9 @@ After ansering all the questions, Toolbox will install all Bower and npm depende
 $ yo toolbox --skip-install
 ````
 
-### Sub generators
+## Sub generators
 
-#### To add a new component
+### To add a new component
 Adding a new component can be redundant, but **Toolbox** do it for you. Basically, it add the `.hbs` component file in the right directory. Same thing for the related `.scss` file. And finally, it import the stylesheet into the `main.scss` file.
 
 Just type :
@@ -39,7 +39,7 @@ $ yo toolbox:component
 
 and choose what kind of component is it and how do you name it.
 
-#### To add new script file
+### To add new script file
 To encourage you testing your scripts, the script sub generator will create the JavaScript file and the related test file.
 
 Just type :

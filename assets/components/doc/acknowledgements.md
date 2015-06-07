@@ -1,10 +1,10 @@
 # Acknowledgements
 
-#### Inspirate by
+### Inspirate by
 
 * [Luke Askew](https://github.com/LukeAskew) for his great job on [Fabricator](http://fbrctr.github.io)
 
-#### Icons
+### Icons
 
 * [Michela Tannoia](https://thenounproject.com/michela.tannoia/)
 * [Ruben Vh](https://thenounproject.com/Ruben_Vh)

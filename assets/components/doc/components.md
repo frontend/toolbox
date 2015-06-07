@@ -2,7 +2,7 @@
 
 Components offer the most modular approach of markup edition. The purpose **is to never duplicate code** and continuously reuse components across your project.
 
-### Hierarchy
+## Hierarchy
 
 The hierarchy is defined by the Brad Frost's [atomic design](http://bradfrost.com/blog/post/atomic-web-design/) principles. Quickly, there is atoms who are used to compose molecules, molecules to compose organisms and organisms to compose templates.
 
@@ -12,7 +12,7 @@ atoms > molecules > organisms > templates
 
 With [Fabricator](http://fbrctr.github.io) and the [Handlebars](http://handlebarsjs.com) template engine, you can easily nest all this components together with a certain degree of logic.
 
-### A basic component
+## A basic component
 
 For example you can have a `button.hbs` :
 
@@ -26,7 +26,7 @@ And to use it in another component or template :
 \{{> button }}
 ````
 
-### Variable component
+## Variable component
 
 Most of the time, your component will change depending on context. So you can add variable inside your component:
 
@@ -45,7 +45,7 @@ So in another component or template :
 Variables can be **String**, **Boolean**, **Array** or **Integer**.
 
 
-### Components hierarchy
+## Components hierarchy
 
 By nesting components, you can add magic in your code.
 
@@ -75,7 +75,7 @@ When you use it in a **specific context**, you can do something like :
 </div>
 ````
 
-### Front-matter context
+## Front-matter context
 
 You can also redefine variable in the front-matter.
 

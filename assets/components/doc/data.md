@@ -2,7 +2,7 @@
 
 You can inject Yaml or JSON data in your components.
 
-### Simple injection
+## Simple injection
 
 For example, in your `cat.yml` :
 
@@ -17,7 +17,7 @@ in your component :
 <h3>\{{ cat.kitten.name }}</h3>
 ````
 
-### Advanced injection
+## Advanced injection
 
 You can have a huge amount of data and with Handlbars helpers, you can loop over it.
 
