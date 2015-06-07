@@ -102,7 +102,7 @@ First, you have to generate references :
 $ gulp test:regression:references
 ````
 
-them, you can launch the test :
+then, you can launch the test :
 
 ````bash
 $ gulp test:regression
