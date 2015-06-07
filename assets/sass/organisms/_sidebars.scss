@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.sidebar {
+  h3 {margin-top: 30px;}
+  h3:first-child {margin-top: 8px;}
+  @media only screen and (max-width: $screen-xs-max) {
+    text-align: left !important;
+  }
+  h3 {margin-top: 10px;}
+}

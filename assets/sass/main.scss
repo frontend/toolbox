@@ -10,11 +10,15 @@
 @import 'mixins/themes';
 
 // atoms:
+@import 'atoms/typography';
+@import 'atoms/code';
 
 // molecules:
-@import 'molecules/sidebars';
-@import 'molecules/headers';
+@import 'molecules/preheaders';
 
 // organisms:
+@import 'organisms/footers';
+@import 'organisms/sidebars';
+@import 'organisms/headers';
 
 // Templates:
