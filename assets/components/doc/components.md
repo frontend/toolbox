@@ -23,7 +23,7 @@ For example you can have a `button.hbs` :
 And to use it in another component or template :
 
 ````html
-{{> button }}
+\{{> button }}
 ````
 
 ### Variable component
@@ -31,7 +31,7 @@ And to use it in another component or template :
 Most of the time, your component will change depending on context. So you can add variable inside your component:
 
 ````html
-<button>{{#if button-content}}{{ button-content }}{{^}}My button{{/if}}</button>
+<button>\{{#if button-content}}\{{ button-content }}\{{^}}My button\{{/if}}</button>
 ````
 
 There is a bit of **conditional logic** to display default content. I can also use a simple `content` variable, but after, we will see that **naming variable is very important** with more than one level of hierarchy.
@@ -39,7 +39,7 @@ There is a bit of **conditional logic** to display default content. I can also u
 So in another component or template :
 
 ````html
-{{> button button-content="My awesome button" }}
+\{{> button button-content="My awesome button" }}
 ````
 
 Variables can be **String**, **Boolean**, **Array** or **Integer**.
@@ -52,7 +52,7 @@ By nesting components, you can add magic in your code.
 For example you have a `button.hbs` atom :
 
 ````html
-<button>{{#if button-content}}{{ button-content }}{{^}}My button{{/if}}</button>
+<button>\{{#if button-content}}\{{ button-content }}\{{^}}My button\{{/if}}</button>
 ````
 
 and a `search-form.hbs` molecule using default atom's value :
@@ -61,9 +61,9 @@ and a `search-form.hbs` molecule using default atom's value :
 <form class="form-inline">
   <div class="form-group">
     <label>Search</label>
-    {{> input }}
+    \{{> input }}
   </div>
-  {{> button }}
+  \{{> button }}
 </form>
 ````
 
@@ -71,7 +71,7 @@ When you use it in a **specific context**, you can do something like :
 
 ````html
 <div class="navbar">
-  {{> search-form button-content="Search" }}
+  \{{> search-form button-content="Search" }}
 </div>
 ````
 
@@ -82,7 +82,7 @@ You can also redefine variable in the front-matter.
 For example, you have (again) a button :
 
 ````html
-<button{{#if homepage}} class="active"{{/if}}>My button</button>
+<button\{{#if homepage}} class="active"\{{/if}}>My button</button>
 ````
 
 So, in your template :
@@ -92,7 +92,7 @@ So, in your template :
 homepage: true
 ---
 <div class="container">
-  {{> button }}
+  \{{> button }}
 </div>
 ````
 

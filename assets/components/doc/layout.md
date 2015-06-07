@@ -17,6 +17,6 @@ layout: custom
 
 ### Helpers
 
-If you want to use a layout in both styleguide and website, you can add conditional logic to add code only in styleguide with `{{#if fabricator}}{{/if}}`.
+If you want to use a layout in both styleguide and website, you can add conditional logic to add code only in styleguide with `\{{#if fabricator}}\{{/if}}`.
 
 You can also include specifics styleguide's components located in `assets/templates/views/layouts/includes/`. This works like normal components.

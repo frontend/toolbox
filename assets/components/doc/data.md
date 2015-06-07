@@ -14,7 +14,7 @@ kitten:
 in your component :
 
 ````html
-<h3>{{ cat.kitten.name }}</h3>
+<h3>\{{ cat.kitten.name }}</h3>
 ````
 
 ### Advanced injection
@@ -41,14 +41,14 @@ For example in your `cat.json` :
 Then, you have a `teaser.hbs` component :
 
 ````html
-<h3>{{ title }}</h3>
-<small>{{ something }}</small>
+<h3>\{{ title }}</h3>
+<small>\{{ something }}</small>
 ````
 
 Finally, to call all the kittens in a list molecule :
 
 ````html
-{{#each cat.kitten }}
-  {{> teaser title=this.name something=this.age }}
-{{/each}}
+\{{#each cat.kitten }}
+  \{{> teaser title=this.name something=this.age }}
+\{{/each}}
 ````

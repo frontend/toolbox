@@ -9,15 +9,15 @@ Same think for data, you can display some data like colors to provide a good ove
 From `assets/data/colors.yml`
 
 ````html
-{{#each colors}}
+\{{#each colors}}
   <div class="f-color-chips">
-  {{#each this}}
+  \{{#each this}}
     <div class="f-color-chip">
-      <div class="f-color-chip__name">{{@key}}</div>
-      <div class="f-color-chip__color">{{this}}</div>
+      <div class="f-color-chip__name">\{{@key}}</div>
+      <div class="f-color-chip__color">\{{this}}</div>
     </div>
-  {{/each}}
+  \{{/each}}
   </div>
-{{/each}}
+\{{/each}}
 
 ````
