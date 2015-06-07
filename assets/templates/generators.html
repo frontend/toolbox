@@ -1,0 +1,14 @@
+---
+dest: ./styleguide/generators.html
+---
+{{> header }}
+<div class="container">
+  <div class="col-sm-4 text-right">
+    {{> sidebar }}
+  </div>
+  <div class="col-sm-7 col-sm-offset-1">
+{{#markdown}}
+  {{> generators }}
+{{/markdown}}
+  </div>
+</div>
