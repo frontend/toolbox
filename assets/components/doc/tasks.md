@@ -94,7 +94,7 @@ $ gulp deploy
 
 You can launch the test with gulp.
 
-**Regression tests :**µ
+**Regression tests :**
 
 First, you have to generate references :
 

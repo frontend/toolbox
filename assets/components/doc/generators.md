@@ -17,7 +17,7 @@ $ yo toolbox
 Some questions will be asked of you :
 * **What's the name of your project ?** (default = Toolbox) You have to give a name to your project. It will be used in the dependencies configuration files.
 * **What would you like to use in your project ?** (default = All) You have to choose to use or not [GulpJS](http://gulpjs.com), [Bootstrap](http://getbootstrap.com/), Tests environment and [Fabricator](http://fbrctr.github.io).
-* **Where would you like to put your assets ?** (default = assets/) By default, assets will be put at the root, but you can specify another path. FOr example to your thene directory.
+* **Where would you like to put your assets ?** (default = assets/) By default, assets will be put at the root, but you can specify another path. For example to your thene directory.
 * **Where would you like to put your build ?** (default = build/) Same as assets ;)
 
 After ansering all the questions, Toolbox will install all Bower and npm dependencies. You can skip this part with the `--skip-install` parameter:
