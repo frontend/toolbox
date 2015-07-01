@@ -52,7 +52,7 @@ describe('Testing main.js', function () {
   // Test 2
   it('body color should be red when click on p.text', function () {
     $('.test').trigger('click');
-    $('body').css('color').should.equal('yellow');
+    $('body').css('color').should.equal('red');
   });
 });
 
