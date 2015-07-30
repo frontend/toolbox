@@ -90,7 +90,7 @@
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>{{ cat.kitten.name }}<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
 </code></pre>
 <h2>Advanced injection</h2>
-<p>You can have a huge amount of data and with Handlbars helpers, you can loop over it.</p>
+<p>You can have a huge amount of data and use Handlbars helpers so you can loop over it.</p>
 <p>For example in your <code>cat.json</code> :</p>
 <pre><code class="lang-json">{
     "<span class="hljs-attribute">kitten</span>": <span class="hljs-value">[
@@ -109,7 +109,7 @@
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>{{ title }}<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">small</span>&gt;</span>{{ something }}<span class="hljs-tag">&lt;/<span class="hljs-title">small</span>&gt;</span>
 </code></pre>
-<p>Finally, to call all the kittens in a list molecule :</p>
+<p>And then, to call all the kittens in a list molecule :</p>
 <pre><code class="lang-html">{{#each cat.kitten }}
   {{&gt; teaser title=this.name something=this.age }}
 {{/each}}

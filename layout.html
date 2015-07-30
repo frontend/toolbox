@@ -80,9 +80,9 @@
     </div>  </div>
   <div class="col-sm-8">
 <h1>Base layouts</h1>
-<p>Located in the <code>assets/templates/views/layouts/</code>, layouts are the wrapper around your styleguide or website templates. By default, <code>default.html</code> is use for any templates, but you can add more.</p>
+<p>Located in the <code>assets/templates/views/layouts/</code>, layouts are the wrappers around your styleguide or website templates. By default, <code>default.html</code> is use for any templates, but you can add more.</p>
 <h2>Using custom layouts</h2>
-<p>Just add a new HTML file into your <code>assets/templates/views/layouts/</code> directory, and don't forget to add the <code>{% body %}</code> anchor. Your content will be place here. Finally, just overide the layout option.</p>
+<p>Just add a new HTML file into your <code>assets/templates/views/layouts/</code> directory, and don't forget to add the <code>{% body %}</code> anchor. Your content will be placed here. Finally, just override the layout option.</p>
 <p>For example, in your <code>homepage.html</code> :</p>
 <pre><code class="lang-html">---
 layout: custom
@@ -90,8 +90,8 @@ layout: custom
 <span class="hljs-comment">&lt;!-- some code --&gt;</span>
 </code></pre>
 <h2>Helpers</h2>
-<p>If you want to use a layout in both styleguide and website, you can add conditional logic to add code only in styleguide with <code>{{#if fabricator}}{{/if}}</code>.</p>
-<p>You can also include specifics styleguide's components located in <code>assets/templates/views/layouts/includes/</code>. This works like normal components.</p>
+<p>If you want to use a layout in both the styleguide and the website, you can add some conditional logic to add code only in styleguide with <code>{{#if fabricator}}...{{/if}}</code>.</p>
+<p>You can also include specific styleguide components located in <code>assets/templates/views/layouts/includes/</code>. This works like with any standard material.</p>
   </div>
 </div>
 <div class="spacer"></div>

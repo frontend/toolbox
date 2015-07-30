@@ -80,8 +80,8 @@
     </div>  </div>
   <div class="col-sm-8">
 <h1>Unit testing</h1>
-<p>Unit testing is the best way to know if your code works or not. It <strong>decontextualized code</strong> to test it in a clean environment, without any “noise”.</p>
-<p>We are using <a href="http://mochajs.org/">Mocha</a> as test framework and <a href="http://chaijs.com/">Chai</a> for assertions. And because a lot of our frontend scripts are using <a href="http://jquery.com/">jQuery</a>, we are using <a href="https://github.com/tmpvar/jsdom">jsdom</a> for emulating the DOM.</p>
+<p>Unit testing is the best way to know if your code works or not. It <strong>decontextualizes code</strong> to test it in a clean environment, without any “noise”.</p>
+<p>We are using <a href="http://mochajs.org/">Mocha</a> as our test framework and <a href="http://chaijs.com/">Chai</a> for assertions. And because a lot of our frontend scripts are using <a href="http://jquery.com/">jQuery</a>, we are using <a href="https://github.com/tmpvar/jsdom">jsdom</a> to emulate the DOM.</p>
 <p>For example if you have a simple <code>main.js</code> jQuery script like :</p>
 <pre><code class="lang-javascript">(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$</span>)</span>{
   $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
@@ -125,12 +125,12 @@ describe(<span class="hljs-string">'Testing main.js'</span>, <span class="hljs-f
   <span class="hljs-comment">// Test 2</span>
   it(<span class="hljs-string">'body color should be red when click on p.text'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
     $(<span class="hljs-string">'.test'</span>).trigger(<span class="hljs-string">'click'</span>);
-    $(<span class="hljs-string">'body'</span>).css(<span class="hljs-string">'color'</span>).should.equal(<span class="hljs-string">'yellow'</span>);
+    $(<span class="hljs-string">'body'</span>).css(<span class="hljs-string">'color'</span>).should.equal(<span class="hljs-string">'red'</span>);
   });
 });
 
 </code></pre>
-<p>The script sub generator provide already a base file for unit testing.</p>
+<p>The <a href="generators.html">sub-generator script</a> already provides a base file for unit testing.</p>
 <p>And finally, to start unit tests, just :</p>
 <pre><code class="lang-bash">$ gulp <span class="hljs-built_in">test</span>:unit
 </code></pre>

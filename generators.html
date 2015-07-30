@@ -79,37 +79,37 @@
       </div>
     </div>  </div>
   <div class="col-sm-8">
-<h1>Generator and sub generators</h1>
-<h2>Bootstraping projects with Toolbox</h2>
+<h1>Generator and sub-generators</h1>
+<h2>Bootstrapping projects with Toolbox</h2>
 <p>First, you have to go in your project directory :</p>
 <pre><code class="lang-bash">$ <span class="hljs-built_in">cd</span> somewhere/over/the/rainbow/
 </code></pre>
-<p>Then, let the magic happend :</p>
+<p>Then, let the magic happen :</p>
 <pre><code class="lang-bash">$ yo toolbox
 </code></pre>
-<p>Some questions will be asked of you :</p>
+<p>You'll get asked some questions :</p>
 <ul>
-<li><strong>What's the name of your project ?</strong> (default = Toolbox) You have to give a name to your project. It will be used in the dependencies configuration files.</li>
-<li><strong>What would you like to use in your project ?</strong> (default = All) You have to choose to use or not <a href="http://gulpjs.com">GulpJS</a>, <a href="http://getbootstrap.com/">Bootstrap</a>, Tests environment and <a href="http://fbrctr.github.io">Fabricator</a>.</li>
-<li><strong>Where would you like to put your assets ?</strong> (default = assets/) By default, assets will be put at the root, but you can specify another path. For example to your thene directory.</li>
-<li><strong>Where would you like to put your build ?</strong> (default = build/) Same as assets ;)</li>
+<li><strong>What's the name of your project ?</strong> <em>(default = Toolbox)</em> You have to give a name to your project. It will be used in the dependencies configuration files.</li>
+<li><strong>What would you like to use in your project ?</strong> <em>(default = All)</em> This lets you choose if you want to use <a href="http://gulpjs.com">GulpJS</a>, <a href="http://getbootstrap.com/">Bootstrap</a>, Tests environment and <a href="http://fbrctr.github.io">Fabricator</a>.</li>
+<li><strong>Where would you like to put your assets ?</strong> (default = assets/) By default, assets will be output in the root folder, but you can specify another path. For example to your thene directory.</li>
+<li><strong>Where would you like to put your build ?</strong> (default = build/) Same as assets, but for your built files ;)</li>
 </ul>
-<p>After ansering all the questions, Toolbox will install all Bower and npm dependencies. You can skip this part with the <code>--skip-install</code> parameter:</p>
+<p>After answering all the questions, Toolbox will install all Bower and npm dependencies. You can skip this part with the <code>--skip-install</code> parameter:</p>
 <pre><code class="lang-bash">$ yo toolbox --skip-install
 </code></pre>
-<h2>Sub generators</h2>
+<h2>Sub-generators</h2>
 <h3>To add a new component</h3>
-<p>Adding a new component can be redundant, but <strong>Toolbox</strong> do it for you. Basically, it add the <code>.hbs</code> component file in the right directory. Same thing for the related <code>.scss</code> file. And finally, it import the stylesheet into the <code>main.scss</code> file.</p>
+<p>Adding a new component can be a hassle, but now <strong>Toolbox</strong> does it for you! Basically, it adds the <code>.hbs</code> component file in the right directory, does the same thing for the related <code>.scss</code> file and then it imports the stylesheet into the <code>main.scss</code> file.</p>
 <p>Just type :</p>
 <pre><code class="lang-bash">$ yo toolbox:component
 </code></pre>
-<p>and choose what kind of component is it and how do you name it.</p>
-<h3>To add new script file</h3>
-<p>To encourage you testing your scripts, the script sub generator will create the JavaScript file and the related test file.</p>
+<p>and choose what kind of component it is and what you want to name it.</p>
+<h3>To add new script files</h3>
+<p>To encourage you to test your scripts, the script sub-generator will create the JavaScript file and the related test file.</p>
 <p>Just type :</p>
 <pre><code class="lang-bash">$ yo toolbox:script
 </code></pre>
-<p>and you can choose between jQuery script or vanilla JS.</p>
+<p>and you can choose between a jQuery script or a vanilla JS one.</p>
   </div>
 </div>
 <div class="spacer"></div>

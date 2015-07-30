@@ -80,34 +80,34 @@
     </div>  </div>
   <div class="col-sm-8">
 <h1>Components</h1>
-<p>Components offer the most modular approach of markup edition. The purpose <strong>is to never duplicate code</strong> and continuously reuse components across your project.</p>
+<p>Components offer the most modular approach to markup edition. The purpose is to  <strong>never duplicate any code</strong> and to continuously reuse components across your project.</p>
 <h2>Hierarchy</h2>
-<p>The hierarchy is defined by the Brad Frost's <a href="http://bradfrost.com/blog/post/atomic-web-design/">atomic design</a> principles. Quickly, there is atoms who are used to compose molecules, molecules to compose organisms and organisms to compose templates.</p>
+<p>The hierarchy is defined by Brad Frost's <a href="http://bradfrost.com/blog/post/atomic-web-design/">atomic design</a> principles. Atoms are used to compose molecules, molecules to compose organisms and organisms to compose templates.</p>
 <pre><code class="lang-plain"><span class="hljs-title">atoms</span> &gt; molecules &gt; organisms &gt; templates
 </code></pre>
-<p>With <a href="http://fbrctr.github.io">Fabricator</a> and the <a href="http://handlebarsjs.com">Handlebars</a> template engine, you can easily nest all this components together with a certain degree of logic.</p>
+<p>With <a href="http://fbrctr.github.io">Fabricator</a> and <a href="http://handlebarsjs.com">Handlebars</a>'s template engine, you can easily nest all these components together with a certain degree of logic.</p>
 <h2>A basic component</h2>
-<p>For example you can have a <code>button.hbs</code> :</p>
+<p>For example you could have a <code>button.hbs</code> :</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">button</span>&gt;</span>My button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 </code></pre>
-<p>And to use it in another component or template :</p>
+<p>And you'll be able to use it in another component or template with this :</p>
 <pre><code class="lang-html">{{&gt; button }}
 </code></pre>
-<h2>Variable component</h2>
-<p>Most of the time, your component will change depending on context. So you can add variable inside your component:</p>
+<h2>Component variable</h2>
+<p>Most of the time, your component will change depending on context. You can add variables inside your component this way :</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">button</span>&gt;</span>{{#if button-content}}{{ button-content }}{{^}}My button{{/if}}<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 </code></pre>
-<p>There is a bit of <strong>conditional logic</strong> to display default content. I can also use a simple <code>content</code> variable, but after, we will see that <strong>naming variable is very important</strong> with more than one level of hierarchy.</p>
-<p>So in another component or template :</p>
+<p>There is a bit of <strong>conditional logic</strong> to display some default content. – in this case, you could name this variable <code>content</code> but we will see in a moment that <strong>variable nomenclature is very important</strong> when you have more than one level of hierarchy.</p>
+<p>You're now able to write this in another component or in a template :</p>
 <pre><code class="lang-html">{{&gt; button button-content="My awesome button" }}
 </code></pre>
-<p>Variables can be <strong>String</strong>, <strong>Boolean</strong>, <strong>Array</strong> or <strong>Integer</strong>.</p>
+<p>Variables can be of type <strong>String</strong>, <strong>Boolean</strong>, <strong>Array</strong> or <strong>Integer</strong>.</p>
 <h2>Components hierarchy</h2>
 <p>By nesting components, you can add magic in your code.</p>
 <p>For example you have a <code>button.hbs</code> atom :</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">button</span>&gt;</span>{{#if button-content}}{{ button-content }}{{^}}My button{{/if}}<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 </code></pre>
-<p>and a <code>search-form.hbs</code> molecule using default atom's value :</p>
+<p>and a <code>search-form.hbs</code> molecule using the value of the default atom :</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-inline"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Search<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
@@ -122,7 +122,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre>
 <h2>Front-matter context</h2>
-<p>You can also redefine variable in the front-matter.</p>
+<p>You can also redefine variables with Front-matter.</p>
 <p>For example, you have (again) a button :</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">button{{#if</span> <span class="hljs-attribute">homepage</span>}} <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span><span class="hljs-value">{{</span>/<span class="hljs-attribute">if</span>}}&gt;</span>My button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 </code></pre>
@@ -134,7 +134,7 @@ homepage: true
   {{&gt; button }}
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre>
-<p>and the button will use the active class.</p>
+<p>and the button will now have the active class.</p>
   </div>
 </div>
 <div class="spacer"></div>

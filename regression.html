@@ -80,9 +80,9 @@
     </div>  </div>
   <div class="col-sm-8">
 <h1>Regression tests</h1>
-<p>Regression tests <strong>are based on references screenshots</strong> and compare it to new generated screenshots. If the diff proportion is bigger than the tolerance defined, the test will fail. In the <code>test/regression/regression.json</code>, you can defined <strong>which viewports</strong> to use, which <strong>url and elements</strong> to capture, and finally the <strong>tolerance</strong>. You can also <strong>hide some elements</strong> in your scenarios, very useful with dynamic generated content.</p>
-<p>When the tests fail, the comparison screenshots will be upload to <a href="http://imgur.com/">imgur</a> to be viewed from anywhere.</p>
-<p>First, you have to generate references and then, launch the tests :</p>
+<p>Regression tests <strong>are based on references screenshots</strong> that get compared to freshly generated screenshots. If the diff proportion is bigger than the defined tolerance value, the test will fail. In the <code>test/regression/regression.json</code>, you can define <strong>which viewports</strong> to use, which <strong>url and elements</strong> to capture, and the <strong>tolerance</strong> value. You can also <strong>hide some elements</strong> in your scenarios — very useful with dynamically generated content.</p>
+<p>When the tests fail, the comparison screenshots will be uploaded to <a href="http://imgur.com/">imgur</a> to be viewed from anywhere.</p>
+<p>First, you have to generate references and then you can launch the tests :</p>
 <pre><code class="lang-bash">$ gulp <span class="hljs-built_in">test</span>:regression:references
 $ gulp <span class="hljs-built_in">test</span>:regression
 </code></pre>

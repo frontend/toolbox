@@ -80,50 +80,50 @@
     </div>  </div>
   <div class="col-sm-8">
 <h1>Tasks</h1>
-<p><strong>Toolbox</strong> gives you few useful Gulp tasks :</p>
+<p><strong>Toolbox</strong> gives you a handful of useful Gulp tasks :</p>
 <h2>Init</h2>
-<p>It will add the last Bootstrap variables file to your project.</p>
+<p>Before you are able to start working, you have to initialize your project's Bootstrap variables. This task will copy the last Bootstrap variables file to your project's assets folder.</p>
 <pre><code class="lang-bash">$ gulp init
 </code></pre>
 <h2>Default and build</h2>
-<p>It build all your project using all the following tasks. You can add a production parameters when you build in production server. It will optimize your stylesheets for example.</p>
+<p>These tasks build your whole project using all the required tasks. You should add a <code>--production</code> flag when you build on a production server. This will remove sourcemaps from your stylesheets for example.</p>
 <pre><code class="lang-bash">$ gulp
 $ gulp build
 $ gulp build --production
 </code></pre>
 <h2>Vendors</h2>
-<p>It takes all vendors files specified in <code>gulp_config.json</code>, concat and build it into the right directories.</p>
+<p>This task takes all vendors files specified in <code>gulp_config.json</code>, concatenates them and builds the resulting files into the right directories.</p>
 <pre><code class="lang-bash">$ gulp vendors
 </code></pre>
 <h2>Images</h2>
 <pre><code class="lang-bash">$ gulp img
 </code></pre>
 <h2>Styles</h2>
-<p>It build all your <code>.scss</code> files with sourcemaps or not if <code>--production</code> is defined.</p>
-<pre><code class="lang-bash">$ gulp init
+<p>This builds all your <code>.scss</code> files with sourcemaps (or not if <code>--production</code> is defined).</p>
+<pre><code class="lang-bash">$ gulp styles
 </code></pre>
 <h2>Scripts</h2>
-<p>It lint and build your JavaScript files.</p>
+<p>This lints and builds your JavaScript files.</p>
 <pre><code class="lang-bash">$ gulp scripts
 </code></pre>
 <h2>Icons</h2>
-<p>It takes all the svg in the icon directory and build it into an iconfont and a related stylesheet.</p>
+<p>This takes all the SVGs in the <code>assets/icons/</code> directory and builds them into an iconfont with its corresponding stylesheet.</p>
 <pre><code class="lang-bash">$ gulp icons
 </code></pre>
 <h2>Clean</h2>
-<p>It cleans all the build directories.</p>
+<p>This cleans (removes completely) all the build directories.</p>
 <pre><code class="lang-bash">$ gulp clean
 </code></pre>
 <h2>Styleguide</h2>
-<p>It build your styleguide and the specific stylesheets and/or scripts.</p>
+<p>This builds your styleguide and the specific stylesheets and/or scripts.</p>
 <pre><code class="lang-bash">$ gulp styleguide
 </code></pre>
 <h2>Serve</h2>
-<p>This is the <strong>most useful task</strong> during your development process. It runs BrowserSync to automatically refresh your browser pages, build all to scripts/stylesheets when they changes and rebuild the styleguide when components are uptated.</p>
+<p>This is the <strong>most useful task</strong> during your development process. It runs BrowserSync to automatically refresh your browser pages, builds all scripts/stylesheets as soon as they change and rebuilds the styleguide when components are updated.</p>
 <pre><code class="lang-bash">$ gulp serve
 </code></pre>
 <h2>Deploy</h2>
-<p>It deploy your defined directory into a gh-pages git branch. (Github required)</p>
+<p>This deploys the styleguide directory to a <code>gh-pages</code> git branch. (Github required)</p>
 <pre><code class="lang-bash">$ gulp deploy
 </code></pre>
 <h2>Testing</h2>
