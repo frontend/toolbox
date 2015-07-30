@@ -1,8 +1,8 @@
 # Configuration
 
-The `gulp_config.json` file is the **backbone** of your frontend project. It tells Gulp where the assets to build are and which vendors files you want use.
+The `gulp_config.json` file is the **backbone** of your frontend project. It tells Gulp where your assets are, where they should be built and which vendors files you want to use from your various dependencies.
 
-It should be like :
+It should be something like :
 
 ````json
 {

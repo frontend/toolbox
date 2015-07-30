@@ -1,10 +1,10 @@
 # Base layouts
 
-Located in the `assets/templates/views/layouts/`, layouts are the wrapper around your styleguide or website templates. By default, `default.html` is use for any templates, but you can add more.
+Located in the `assets/templates/views/layouts/`, layouts are the wrappers around your styleguide or website templates. By default, `default.html` is use for any templates, but you can add more.
 
 ## Using custom layouts
 
-Just add a new HTML file into your `assets/templates/views/layouts/` directory, and don't forget to add the `{% body %}` anchor. Your content will be place here. Finally, just overide the layout option.
+Just add a new HTML file into your `assets/templates/views/layouts/` directory, and don't forget to add the `{% body %}` anchor. Your content will be placed here. Finally, just override the layout option.
 
 For example, in your `homepage.html` :
 
@@ -17,6 +17,6 @@ layout: custom
 
 ## Helpers
 
-If you want to use a layout in both styleguide and website, you can add conditional logic to add code only in styleguide with `\{{#if fabricator}}\{{/if}}`.
+If you want to use a layout in both the styleguide and the website, you can add some conditional logic to add code only in styleguide with `\{{#if fabricator}}...\{{/if}}`.
 
-You can also include specifics styleguide's components located in `assets/templates/views/layouts/includes/`. This works like normal components.
+You can also include specific styleguide components located in `assets/templates/views/layouts/includes/`. This works like with any standard material.

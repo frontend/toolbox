@@ -1,8 +1,8 @@
 # Unit testing
 
-Unit testing is the best way to know if your code works or not. It **decontextualized code** to test it in a clean environment, without any “noise”.
+Unit testing is the best way to know if your code works or not. It **decontextualizes code** to test it in a clean environment, without any “noise”.
 
-We are using [Mocha](http://mochajs.org/) as test framework and [Chai](http://chaijs.com/) for assertions. And because a lot of our frontend scripts are using [jQuery](http://jquery.com/), we are using [jsdom](https://github.com/tmpvar/jsdom) for emulating the DOM.
+We are using [Mocha](http://mochajs.org/) as our test framework and [Chai](http://chaijs.com/) for assertions. And because a lot of our frontend scripts are using [jQuery](http://jquery.com/), we are using [jsdom](https://github.com/tmpvar/jsdom) to emulate the DOM.
 
 For example if you have a simple `main.js` jQuery script like :
 
@@ -58,7 +58,7 @@ describe('Testing main.js', function () {
 
 ````
 
-The script sub generator provide already a base file for unit testing.
+The [sub-generator script](generators.html) already provides a base file for unit testing.
 
 And finally, to start unit tests, just :
 

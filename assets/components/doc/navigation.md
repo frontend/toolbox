@@ -1,8 +1,8 @@
 # Navigation tests
 
-To be sure that all the interactions implemented in your project works, **the navigation tests are the best way to keep everything under control**.
+To be sure that all the interactions implemented in your project work, **the navigation tests are the best way to keep everything under control**.
 
-For navigation testing, we are using [CasperJS](http://casperjs.org/). This tool is pretty easy to use and you can do almost everything that a normal user can do.
+For navigation testing, we are using [CasperJS](http://casperjs.org/). This tool is pretty easy to use and you can do almost everything that a human using your website can do.
 
 For example :
 
@@ -39,7 +39,7 @@ casper.test.begin('Demo testing on wikipedia', 2, function suite(test) {
 ------
 
 
-Here there is a useful **cheatsheet** from [gentlnode.com](https://gentlenode.com/journal/casperjs-2-cheatsheet-with-phantomjs-and-spooky/8) :
+Here is a useful **cheatsheet** from [gentlnode.com](https://gentlenode.com/journal/casperjs-2-cheatsheet-with-phantomjs-and-spooky/8) :
 
 ````javascript
 var casper = require('casper').create({

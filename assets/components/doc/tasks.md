@@ -1,10 +1,10 @@
 # Tasks
 
-**Toolbox** gives you few useful Gulp tasks :
+**Toolbox** gives you a handful of useful Gulp tasks :
 
 ## Init
 
-It will add the last Bootstrap variables file to your project.
+Before you are able to start working, you have to initialize your project's Bootstrap variables. This task will copy the last Bootstrap variables file to your project's assets folder.
 
 ````bash
 $ gulp init
@@ -12,7 +12,7 @@ $ gulp init
 
 ## Default and build
 
-It build all your project using all the following tasks. You can add a production parameters when you build in production server. It will optimize your stylesheets for example.
+These tasks build your whole project using all the required tasks. You should add a `--production` flag when you build on a production server. This will remove sourcemaps from your stylesheets for example.
 
 ````bash
 $ gulp
@@ -22,7 +22,7 @@ $ gulp build --production
 
 ## Vendors
 
-It takes all vendors files specified in `gulp_config.json`, concat and build it into the right directories.
+This task takes all vendors files specified in `gulp_config.json`, concatenates them and builds the resulting files into the right directories.
 
 ````bash
 $ gulp vendors
@@ -36,15 +36,15 @@ $ gulp img
 
 ## Styles
 
-It build all your `.scss` files with sourcemaps or not if `--production` is defined.
+This builds all your `.scss` files with sourcemaps (or not if `--production` is defined).
 
 ````bash
-$ gulp init
+$ gulp styles
 ````
 
 ## Scripts
 
-It lint and build your JavaScript files.
+This lints and builds your JavaScript files.
 
 ````bash
 $ gulp scripts
@@ -52,7 +52,7 @@ $ gulp scripts
 
 ## Icons
 
-It takes all the svg in the icon directory and build it into an iconfont and a related stylesheet.
+This takes all the SVGs in the `assets/icons/` directory and builds them into an iconfont with its corresponding stylesheet.
 
 ````bash
 $ gulp icons
@@ -60,7 +60,7 @@ $ gulp icons
 
 ## Clean
 
-It cleans all the build directories.
+This cleans (removes completely) all the build directories.
 
 ````bash
 $ gulp clean
@@ -68,7 +68,7 @@ $ gulp clean
 
 ## Styleguide
 
-It build your styleguide and the specific stylesheets and/or scripts.
+This builds your styleguide and the specific stylesheets and/or scripts.
 
 ````bash
 $ gulp styleguide
@@ -76,7 +76,7 @@ $ gulp styleguide
 
 ## Serve
 
-This is the **most useful task** during your development process. It runs BrowserSync to automatically refresh your browser pages, build all to scripts/stylesheets when they changes and rebuild the styleguide when components are uptated.
+This is the **most useful task** during your development process. It runs BrowserSync to automatically refresh your browser pages, builds all scripts/stylesheets as soon as they change and rebuilds the styleguide when components are updated.
 
 ````bash
 $ gulp serve
@@ -84,7 +84,7 @@ $ gulp serve
 
 ## Deploy
 
-It deploy your defined directory into a gh-pages git branch. (Github required)
+This deploys the styleguide directory to a `gh-pages` git branch. (Github required)
 
 ````bash
 $ gulp deploy

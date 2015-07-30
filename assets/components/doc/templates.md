@@ -1,10 +1,10 @@
 # Templates
 
-Templates are **the last level of hierarchy** in the atomic design principles. You will add all yours components and data in it to create final pages.
+Templates are **the last level of hierarchy** in the atomic design principles. All of your components and data will be written in it to create complete pages.
 
-By default, they are builded in the `styleguide/templates/` directory, but you can specified a custom path to **build** your final cms or whatever framework's templates.
+By default, templates are built in the `styleguide/templates/` directory, but you can specify a custom path to **build** your final CMS or whatever framework templates.
 
-There is 2 front-matter options who change the builded path or simply build a copy in a specified path.
+There are two Front-matter options that change the built file's path or simply build a copy in a specified path.
 
 ````html
 ---

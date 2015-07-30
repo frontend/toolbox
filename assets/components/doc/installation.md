@@ -10,7 +10,7 @@ Then, if you want to use the **testing environment**, you will need [PhantomJS](
 $ npm install -g phantomjs casperjs
 ````
 
-And finally, to use the **generator**, you have to install [Yeoman](http://yeoman.io/) in global :
+And finally, to use the **generator**, you will have to install [Yeoman](http://yeoman.io/) globally :
 
 ````bash
 $ npm install -g yo
@@ -18,7 +18,7 @@ $ npm install -g yo
 
 ## Installation
 
-To install **Toolbox** :
+To install **Toolbox**, just run :
 
 ````bash
 $ npm install -g generator-toolbox

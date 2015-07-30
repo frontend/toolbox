@@ -1,6 +1,6 @@
 # The file structure
 
-By bootstraping a project with **Toolbox**, the generator will produce this kind of file structure :
+By bootstrapping a project with **Toolbox**, the generator will produce this kind of file structure :
 
 ````plaintext
 .

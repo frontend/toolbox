@@ -4,7 +4,7 @@
 * [Yann Gouffon](https://github.com/Yago) ([@Yago_0](https://twitter.com/Yago_0))
 * [Toni Fisler](https://github.com/tonifisler) ([@tonifisler](https://twitter.com/tonifisler))
 
-### Inspirate by
+### Inspired by
 
 * [Luke Askew](https://github.com/LukeAskew) for his great job on [Fabricator](http://fbrctr.github.io)
 

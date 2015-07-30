@@ -19,7 +19,7 @@ in your component :
 
 ## Advanced injection
 
-You can have a huge amount of data and with Handlbars helpers, you can loop over it.
+You can have a huge amount of data and use Handlbars helpers so you can loop over it.
 
 For example in your `cat.json` :
 
@@ -45,7 +45,7 @@ Then, you have a `teaser.hbs` component :
 <small>\{{ something }}</small>
 ````
 
-Finally, to call all the kittens in a list molecule :
+And then, to call all the kittens in a list molecule :
 
 ````html
 \{{#each cat.kitten }}

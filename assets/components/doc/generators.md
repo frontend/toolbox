@@ -1,6 +1,6 @@
-# Generator and sub generators
+# Generator and sub-generators
 
-## Bootstraping projects with Toolbox
+## Bootstrapping projects with Toolbox
 
 First, you have to go in your project directory :
 
@@ -8,28 +8,29 @@ First, you have to go in your project directory :
 $ cd somewhere/over/the/rainbow/
 ````
 
-Then, let the magic happend :
+Then, let the magic happen :
 
 ````bash
 $ yo toolbox
 ````
 
-Some questions will be asked of you :
-* **What's the name of your project ?** (default = Toolbox) You have to give a name to your project. It will be used in the dependencies configuration files.
-* **What would you like to use in your project ?** (default = All) You have to choose to use or not [GulpJS](http://gulpjs.com), [Bootstrap](http://getbootstrap.com/), Tests environment and [Fabricator](http://fbrctr.github.io).
-* **Where would you like to put your assets ?** (default = assets/) By default, assets will be put at the root, but you can specify another path. For example to your thene directory.
-* **Where would you like to put your build ?** (default = build/) Same as assets ;)
+You'll get asked some questions :
 
-After ansering all the questions, Toolbox will install all Bower and npm dependencies. You can skip this part with the `--skip-install` parameter:
+* **What's the name of your project ?** *(default = Toolbox)* You have to give a name to your project. It will be used in the dependencies configuration files.
+* **What would you like to use in your project ?** *(default = All)* This lets you choose if you want to use [GulpJS](http://gulpjs.com), [Bootstrap](http://getbootstrap.com/), Tests environment and [Fabricator](http://fbrctr.github.io).
+* **Where would you like to put your assets ?** (default = assets/) By default, assets will be output in the root folder, but you can specify another path. For example to your thene directory.
+* **Where would you like to put your build ?** (default = build/) Same as assets, but for your built files ;)
+
+After answering all the questions, Toolbox will install all Bower and npm dependencies. You can skip this part with the `--skip-install` parameter:
 
 ````bash
 $ yo toolbox --skip-install
 ````
 
-## Sub generators
+## Sub-generators
 
 ### To add a new component
-Adding a new component can be redundant, but **Toolbox** do it for you. Basically, it add the `.hbs` component file in the right directory. Same thing for the related `.scss` file. And finally, it import the stylesheet into the `main.scss` file.
+Adding a new component can be a hassle, but now **Toolbox** does it for you! Basically, it adds the `.hbs` component file in the right directory, does the same thing for the related `.scss` file and then it imports the stylesheet into the `main.scss` file.
 
 Just type :
 
@@ -37,10 +38,10 @@ Just type :
 $ yo toolbox:component
 ````
 
-and choose what kind of component is it and how do you name it.
+and choose what kind of component it is and what you want to name it.
 
-### To add new script file
-To encourage you testing your scripts, the script sub generator will create the JavaScript file and the related test file.
+### To add new script files
+To encourage you to test your scripts, the script sub-generator will create the JavaScript file and the related test file.
 
 Just type :
 
@@ -48,4 +49,4 @@ Just type :
 $ yo toolbox:script
 ````
 
-and you can choose between jQuery script or vanilla JS.
+and you can choose between a jQuery script or a vanilla JS one.
