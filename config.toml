@@ -44,6 +44,10 @@ googleAnalytics = ""
 	github  = "frontend"
 	email   = "dev@antistatique.net"
 
+[[menu.main]]
+	name   = "Toolbox"
+	url    = "/"
+	weight = 1
 
 [[menu.main]]
 	name   = "Getting started"
@@ -51,7 +55,7 @@ googleAnalytics = ""
 	weight = 10
 
 [[menu.main]]
-	name   = "Toolbox"
+	name   = "The styleguide generator"
 	url    = "toolbox/"
 	weight = 20
 
