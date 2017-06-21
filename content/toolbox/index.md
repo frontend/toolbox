@@ -31,6 +31,7 @@ assets
 │   └── pages
 ├── config
 │   ├── bootstrap.scss
+│   ├── data.json
 │   ├── styleguide.scss
 │   └── variables.scss
 ├── favicons
@@ -84,6 +85,38 @@ You can add variants to a component. To do this, follow these steps:
   └── my-component-variant-name.twig
   ```
 3. The styles should reside inside the component SCSS file.
+
+### Handle data
+
+You can add some data in `assets/data.json` and call it directly inside your template, through the power of Twig.
+
+data.json content:
+```json
+{
+  "colors": {
+    "black": "#000",
+    "red": "#f00"
+  }
+}
+```
+
+Inside component:
+
+```twig
+<p>{{ colors.black }}</p>
+```
+
+## Twig usage
+
+You can use Twig as a template engine for all your components. Check [Twig documentation](https://twig.sensiolabs.org/doc/2.x/) for more info. 
+
+### Namespacing
+
+Every `include` call should however be namespaced as follows:
+
+```twig
+{% include "molecules::my-component/my-component.twig" %}
+```
 
 ## Add new components
 
