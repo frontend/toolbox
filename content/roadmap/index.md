@@ -26,3 +26,4 @@ Feel free to open issues, or start a PR on our Github repositories if you see a 
 - **[Documentation](https://github.com/frontend/toolbox)**: The documentation you're currently reading
 - **[Toolbox Reader](https://github.com/frontend/toolbox-reader)**: The React app to generate the styleguide based on your Twig components
 - **[Toolbox Generator](https://github.com/frontend/generator-toolbox)**: The Yeoman generator to scaffold your styleguide and add new components
+- **[Toolbox Utils](https://github.com/frontend/generator-toolbox)**: The build tasks and everything you need to have your styleguide built properly
