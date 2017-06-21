@@ -9,6 +9,10 @@ weight: 0
 
 With the Toolbox Generator, you're generating a nice front-end development environment with all the features you need. 
 
+{{< note title="Under Construction" >}}
+The Toolbox Reader and styleguide tasks are currently under heavy refactoring. We are planning to extensively improve the overall look of everything and add many features in the coming months.
+{{< /note >}}
+
 ## What you'll get
 
 - A styleguide environment to showcase your front-end design
@@ -17,3 +21,4 @@ With the Toolbox Generator, you're generating a nice front-end development envir
 - ES6 support and Webpack build tasks
 - Twig templating for your components
 - Subgenerators to generate new components
+
