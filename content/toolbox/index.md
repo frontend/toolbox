@@ -90,7 +90,7 @@ You can add variants to a component. To do this, follow these steps:
 To add new components, just run:
 
 ```sh
-yo toolbox:component
+yo toolbox:generate
 ```
 
 You will get a choice between several components, based on the [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) principles:
