@@ -72,7 +72,7 @@ You can add variants to a component. To do this, follow these steps:
 
   ```yml
   variants:
-    - variant-name
+    variant-name: Variant Title
   ```
 
 2. Create a file named following this pattern: `[name-of-your-component]-[variant-name].twig`:
