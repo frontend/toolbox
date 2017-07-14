@@ -86,6 +86,8 @@ You can add variants to a component. To do this, follow these steps:
   ```
 3. The styles should reside inside the component SCSS file.
 
+The variant is wrapped inside a `.tlbx-[name-of-your-component]-[variant-name]` div that you can use for styling inside the styleguide.
+
 ### Handle data
 
 You can add some data in `assets/data.json` and call it directly inside your template, through the power of Twig.

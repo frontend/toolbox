@@ -9,9 +9,11 @@ weight: 0
 
 With the Toolbox Generator, you're generating a nice front-end development environment with all the features you need. 
 
-{{< note title="Under Construction" >}}
+{{< warning title="Under Construction" >}}
 The Toolbox Reader and styleguide tasks are currently under heavy refactoring. We are planning to extensively improve the overall look of everything and add many features in the coming months.
-{{< /note >}}
+
+**Please use the `dev` branch of the [`generator-toolbox`](https://github.com/frontend/generator-toolbox) to test the new styleguide.**
+{{< /warning >}}
 
 ## What you'll get
 
