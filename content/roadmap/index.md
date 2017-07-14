@@ -15,7 +15,8 @@ We are planning to add a number of features in future releases:
 - Add settings to customize homepage and styleguide styles
 - Add a custom stylesheet for the styleguide itself
 - Finalize & fix the tasks for the SVG icons / font icons
-- Generate a page with the color palette and general basic styleguide doc
+- ✔ ~~Generate a page with the color palette and accessibility table~~
+- Add general basic styleguide doc
 - Add regression testing ([Gemini](https://gemini-testing.github.io/) maybe)
 - Add variants to a component via the generator-toolbox CLI
 
