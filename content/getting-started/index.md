@@ -8,7 +8,7 @@ weight: 10
 
 ### Installing Toolbox
 
-Before you can run the generator, you need to make sure you have the latest version of [Yeoman](http://yeoman.io/) installed.
+Before you can run the generator, you need to make sure you have the latest version of [Yeoman](http://yeoman.io/) installed and **Node v8** installed.
 
 ```sh
 npm install -g yo

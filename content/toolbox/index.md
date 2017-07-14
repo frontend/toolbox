@@ -120,6 +120,12 @@ Every `include` call should however be namespaced as follows:
 {% include "molecules::my-component/my-component.twig" %}
 ```
 
+## Bootstrap
+
+You can install Bootstrap automatically on setup. 
+
+**Don't forget to update the `toolbox.json`** according to your tastes. We don't import Tooltip, Carousel and other scripts from the start.
+
 ## Add new components
 
 To add new components, just run:
