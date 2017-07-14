@@ -11,8 +11,6 @@ With the Toolbox Generator, you're generating a nice front-end development envir
 
 {{< warning title="Under Construction" >}}
 The Toolbox Reader and styleguide tasks are currently under heavy refactoring. We are planning to extensively improve the overall look of everything and add many features in the coming months.
-
-**Please use the `dev` branch of the [`generator-toolbox`](https://github.com/frontend/generator-toolbox) to test the new styleguide.**
 {{< /warning >}}
 
 ## What you'll get
