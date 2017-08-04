@@ -9,7 +9,7 @@ weight: 30
 We are planning to add a number of features in future releases:
 
 - Create a beautiful theme
-- Add [Prettier](https://prettier.github.io/prettier) in styles and scripts tasks
+- ~~Add [Prettier](https://prettier.github.io/prettier) in styles and scripts task~~
 - Show `@TODO` lines in console when building
 - Generate favicons with [RealFaviconGenerator API](https://realfavicongenerator.net/api)
 - Add settings to customize homepage and styleguide styles
