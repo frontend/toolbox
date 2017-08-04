@@ -1,4 +1,4 @@
-baseurl = "http://frontend.github.io/toolbox/"
+baseurl = "https://frontend.github.io/toolbox/"
 languageCode = "en-us"
 title = "Toolbox"
 theme = "hugo-material-docs"
@@ -68,4 +68,3 @@ googleAnalytics = ""
 	name   = "License"
 	url    = "license/"
 	weight = 40
-
