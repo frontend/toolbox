@@ -84,6 +84,7 @@ You can add variants to a component. To do this, follow these steps:
   ├── my-component.yml
   └── my-component-variant-name.twig
   ```
+
 3. The styles should reside inside the component SCSS file.
 
 The variant is wrapped inside a `.tlbx-[name-of-your-component]-[variant-name]` div that you can use for styling inside the styleguide.
@@ -122,9 +123,13 @@ Every `include` call should however be namespaced as follows:
 
 ## Bootstrap
 
-You can install Bootstrap automatically on setup. 
+You can install Bootstrap automatically on setup.
 
 **Don't forget to update the `toolbox.json`** according to your tastes. We don't import Tooltip, Carousel and other scripts from the start.
+
+## Customize the styleguide
+
+You can override the index template by creating a `toolbox-index.html` in your project root directory.
 
 ## Add new components
 

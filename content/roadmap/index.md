@@ -12,8 +12,8 @@ We are planning to add a number of features in future releases:
 - ~~Add [Prettier](https://prettier.github.io/prettier) in styles and scripts task~~
 - Show `@TODO` lines in console when building
 - Generate favicons with [RealFaviconGenerator API](https://realfavicongenerator.net/api)
-- Add settings to customize homepage and styleguide styles
-- Add a custom stylesheet for the styleguide itself
+- ✔ ~~Add settings to customize homepage and styleguide styles~~
+- ✔ ~~Add a custom stylesheet for the styleguide itself~~
 - Finalize & fix the tasks for the SVG icons / font icons
 - ✔ ~~Generate a page with the color palette and accessibility table~~
 - Add general basic styleguide doc
