@@ -72,7 +72,7 @@ You can add variants to a component. To do this, follow these steps:
 
   ```yml
   variants:
-    variant-name: Variant Title
+    - variant-name
   ```
 
 2. Create a file named following this pattern: `[name-of-your-component]-[variant-name].twig`:
@@ -88,6 +88,9 @@ You can add variants to a component. To do this, follow these steps:
 3. The styles should reside inside the component SCSS file.
 
 The variant is wrapped inside a `.tlbx-[name-of-your-component]-[variant-name]` div that you can use for styling inside the styleguide.
+
+### Insert images
+To display images in your content, place them in your `/assets/images` folder and refer to them with such a url: `./images/[image-name].[extension]` in your components. (Note the `./` at the beginning that will make sure images work when deployed on gh-pages.)
 
 ### Handle data
 
