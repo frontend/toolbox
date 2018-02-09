@@ -8,7 +8,13 @@ The documentation for the Toolbox Styleguide Generation
 
 ## Deploy
 
-To deploy the documentation on gh-pages, simply run:
+To deploy the documentation on gh-pages, you will need [hugo](https://hugo.io/getting-started/installing)
+
+```shell
+$ brew install hugo
+```
+
+then, simply run:
 
 ```shell
 $ ./_scripts/deploy.sh
