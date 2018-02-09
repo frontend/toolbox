@@ -14,6 +14,11 @@ To deploy the documentation on gh-pages, you will need [hugo](https://hugo.io/ge
 $ brew install hugo
 ```
 
+And don't forget to recover all sources from the git submodules, if that's the first time you checkout the repo
+```shell
+git submodule update --init --recursive
+```
+
 then, simply run:
 
 ```shell
