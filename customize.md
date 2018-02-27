@@ -47,6 +47,17 @@ If the default template did not suit to your project and you want to edit the `<
 </html>
 ```
 
+## Custom homepage
+
+By default, the `./docs/index.{html, md}` will be rendered in the styleguide's homepage with all the styleguide shell around. If you want a **full-sized homepage to create some custom fancy welcome page**, you can create a custom `index.html` as describe above and add :
+
+```html
+<head>
+  <!-- [...] -->
+  <script>window.fullhome = true;</script>
+</head>
+```
+
 ### Next step
 
 You want to know a bit more about the people and the philosophy behind Toolbox, check [this last page](about.html).
