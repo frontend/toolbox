@@ -1,26 +1,41 @@
-# Toolbox
+# Introduction
 
-The documentation for the Toolbox Styleguide Generation
+**Toolbox** is not only a styleguide generator and a developer toolset, first of all, it's a complete **frontend atomic development workflow** based on three main modules.
 
-- **[Toolbox Reader](https://github.com/frontend/toolbox-reader)**: The React app to generate the styleguide based on your Twig components
-- **[Toolbox Generator](https://github.com/frontend/generator-toolbox)**: The Yeoman generator to scaffold your styleguide and add new components
-- **[Toolbox Utils](https://github.com/frontend/generator-utils)**: The build tasks and everything you need to have your styleguide built properly
+## The Generator
 
-## Deploy
+[`generator-toolbox`](https://github.com/frontend/generator-toolbox) is based on [Yeoman](yeoman.io/) and it's used to **scaffold your project** with your parameters and help you to **create new components** / **variants**.
 
-To deploy the documentation on gh-pages, you will need [hugo (V0.30.2)] (https://hugo.io/getting-started/installing)
+Learn more about how to :
 
-```shell
-$ brew install hugo
-```
+- [Setup a new project](new-project/new-project.html)
+- [Create a new components](new-component.html)
+- [Create a new variant](new-variant.html)
 
-And don't forget to recover all sources from the git submodules, if that's the first time you checkout the repo
-```shell
-git submodule update --init --recursive
-```
+## The Utilities
 
-then, simply run:
+[`toolbox-utils`](https://github.com/frontend/toolbox-utils) is the encapsulated build tasks module. Based on [Gulp](https://gulpjs.com/) and [Webpack](https://webpack.js.org/), those utilities offers you anything you need in your frontend development process in a single dev dependency. It will mainly :
 
-```shell
-$ ./_scripts/deploy.sh
-```
+- **serve** the styleguide
+- **build** your project's **styles (Sass)** and **scrips (ES6+)** on each saves
+- create a **SVG icon set** based on files
+- help you working with **frameworks**
+- create the dev and production **bundles**
+- **deploy** the styleguide on a `gh-pages`
+
+Learn more about how to :
+
+- [Define your project's parameters](#)
+- [Adding libraries to your project](#)
+
+## The Reader
+
+Instead of building a static documentation, [`toolbox-reader`](https://github.com/frontend/toolbox-reader) will **read your components library** and display them in a nice and presentable interface. It's a very **usefull tool to collaborate** with designers, client and other developers. And each time a new feature is added to the reader, any old styleguides will have it directly.
+
+Learn more about how to :
+
+- [Write components](/writing)
+- [Style components](/styling)
+- [Script components](/scripting)
+- [Write documentation](/docs)
+
