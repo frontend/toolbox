@@ -2,7 +2,7 @@
 
 ## Theme settings
 
-In your local `toolbox.json`, you can add a `theme` configuration object with **multiples optionals parameters** who looks like :
+In your local `toolbox.json`, you can add a `theme` configuration object with **multiples optional parameters** who looks like :
 
 ./toolbox.json
 ```json
@@ -27,7 +27,7 @@ In your local `toolbox.json`, you can add a `theme` configuration object with **
 
 ## Custom index.html
 
-If the default template did not suits to your project and you want edit the `<head>` of your styleguide, you can simply add a `toolbox-index.html` in the root directory. Then you edit the following default template.
+If the default template did not suit to your project and you want to edit the `<head>` of your styleguide, you can simply add a `toolbox-index.html` in the root directory. Then you edit the following default template.
 
 ./toolbox-index.html
 ```html

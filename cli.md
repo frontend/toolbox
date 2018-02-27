@@ -34,13 +34,13 @@ The previous script encapsulate Toolbox's build tasks, but there is times when y
 ```bash
 $ ./node_modules/.bin/toolbox -T
 ```
-**List** all the availables Gulp tasks/commands
+**List** all the available Gulp tasks/commands
 
 ----
 ```bash
 $ ./node_modules/.bin/toolbox clean
 ```
-Will **remove** all builded directories and files
+Will **remove** all built directories and files
 
 ----
 ```bash

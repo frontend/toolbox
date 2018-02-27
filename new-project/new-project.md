@@ -28,7 +28,7 @@ A series of **questions** will prompt :
     ◉ Create CHANGELOG.md and VERSION files
   ```
 
-4. You can choose between **SVG icons** (recommanded) or old icon font.
+4. You can choose between **SVG icons** (recommended) or old icon font.
   ```plain
   ? How should your icons be generated? (Use arrow keys)
   ❯ I want the SVG icons goodness
@@ -45,7 +45,7 @@ A series of **questions** will prompt :
   ? Where would you like to put your build?
   ```
 
-7. It finishes with dependencies installation using [Yarn](https://yarnpkg.com/). 
+7. It finishes with dependencies installations using [Yarn](https://yarnpkg.com/). 
 
 ### Next step
 

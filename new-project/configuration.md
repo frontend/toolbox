@@ -1,6 +1,6 @@
 # toolbox.json
 
-It's a ratherly simple configuration JSON file which describes **where are located your project's directories** and **which libraries you are using**.
+It's a fatherly simple configuration JSON file which describes **where are located your project's directories** and **which libraries you are using**.
 
 ./toolbox.js
 ```json
@@ -40,3 +40,4 @@ It's a ratherly simple configuration JSON file which describes **where are locat
 ### Next step
 
 Now you can finally start to [create your own components](../new-component.html).
+

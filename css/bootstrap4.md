@@ -1,12 +1,12 @@
 # Bootstrap 4
 
-⚠️ This part is completely optional or/and can be applied to any others CSS/JS frameworks.
+⚠️ This part is completely optional or/and can be applied to any other CSS/JS frameworks.
 
-We will speak here a bit more about how you can easilly include and customize any CSS framework inside your own Toolbox project.
+We will speak here a bit more about how you can easily include and customize any CSS framework inside your own Toolbox project.
 
 ## Prerequisites
 
-The framework that you're using **should be written in [Sass](https://sass-lang.com/)**. There is others CSS preprocessors, but Toolbox is Sass based. Feel free to submit a [pull-request](https://github.com/frontend/toolbox-utils/pulls) if you need another support.
+The framework that you're using **should be written in [Sass](https://sass-lang.com/)**. There are other CSS preprocessors, but Toolbox is Sass based. Feel free to submit a [pull-request](https://github.com/frontend/toolbox-utils/pulls) if you need another support.
 
 ## Import
 
@@ -20,7 +20,7 @@ To **create the `bootstrap-variables.scss`**, type the following command to get 
 $ cp node_modules/bootstrap/scss/_variables.scss assets/config/boostrap-variables.scss
 ```
 
-**bootstrap.scss** will import all the Bootstrap parts that you need. Remember, import only what you need to keep your CSS bundle as light as possible. This **bootstrap.scss** will be import at the top of our Sass entry file.
+**bootstrap.scss** will import all the Bootstrap parts that you need. Remember, import only what you need to keep your CSS bundle as light as possible. This **bootstrap.scss** will be imported at the top of our Sass entry file.
 
 ./assets/components/base.scss
 ```scss
@@ -55,7 +55,7 @@ $cyan:     $picton-blue !default;
 // [...]
 ```
 
-From now, you can easilly use all the framework's variables, mixins and all the goodness to style your project !
+From now, you can easily use all the framework's variables, mixins and all the goodness to style your project !
 
 ### Next step
 

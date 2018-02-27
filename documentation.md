@@ -4,7 +4,7 @@ Documenting his project is a very important part. To keep things conventional, *
 
 You can choose to write documentation using **[Markdown](https://daringfireball.net/projects/markdown/syntax)** syntax or in **plain HTML** (no `head`/`body` required). There is no depth limitation in the file structure, but try to keep things simple and understandable.
 
-This is an example of what can your `./docs` folder can looks like :
+This is an example of what can your `./docs` folder can look like :
 
 ```plain
 .

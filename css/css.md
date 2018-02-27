@@ -15,5 +15,3 @@ So **to ensure a global consistency**, even when working in a large team, **[Sty
 ### Next step
 
 You can check how to [integrate Bootstrap 4](bootstrap4.html) or any other frameworks in your project.
-
-

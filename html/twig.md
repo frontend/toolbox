@@ -1,10 +1,10 @@
 # Twig
 
-Because it's really popular in the Drupal and the Wordpress community, we choose to use [Twig](http://twig.symfony.com/) as the **default template engine** of toolbox's components. Of course, **you can use only plain HTML**, but Twig is usefull you add a little bit of magic in your markup.
+Because it's really popular in the Drupal and the Wordpress community, we choose to use [Twig](http://twig.symfony.com/) as the **default template engine** of toolbox's components. Of course, **you can use only plain HTML**, but Twig is useful you add a little bit of magic in your markup.
 
-## Inject datas
+## Inject data
 
-All the data written in your `assets/config/data.json` are availables to all your components. You can use strings, numbers, boolean, arrays and even arrays of objects ! The idea behind that features is **to keep your HTML clean**, without too much content.
+All the data written in your `assets/config/data.json` are available to all your components. You can use strings, numbers, boolean, arrays and even arrays of objects ! The idea behind that feature is **to keep your HTML clean**, without too much content.
 
 #### Simple example
 
@@ -40,7 +40,7 @@ All the data written in your `assets/config/data.json` are availables to all you
 
 ## Import components
 
-Because each level are namespaced, you can simply define the name and the type of component using `include`. You can also pass data from the parent component (see advanced example).
+Because each level is namespaced, you can simply define the name and the type of component using `include`. You can also pass data from the parent component (see advanced example).
 
 #### Simple example
 
@@ -69,7 +69,7 @@ Because each level are namespaced, you can simply define the name and the type o
 
 ## Logic
 
-With Twig you can add a bit of logic in your template. **Try to keep things always as simple as possible**, but there is some usefull examples.
+With Twig you can add a bit of logic in your template. **Try to keep things always as simple as possible**, but there are some useful examples.
 
 #### Data simulation
 
@@ -127,7 +127,3 @@ With Twig you can add a bit of logic in your template. **Try to keep things alwa
 ### Next step
 
 Learn how to [style your component](../css/css.html) using Sass
-
-
-
-

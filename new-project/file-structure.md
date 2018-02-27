@@ -1,6 +1,6 @@
 # File structure
 
-A fresh Toolbox project look like this :
+A fresh Toolbox project looks like this :
 
 ```plain
 .

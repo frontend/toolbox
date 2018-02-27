@@ -6,7 +6,7 @@ To create a new variant, yo can use :
 $ yo toolbox:variant
 ```
 
-You will need on which component to attach this variant and what's it name.
+You will need on which component to attach this variant and what it's name.
 
 ## File structure
 
@@ -20,7 +20,7 @@ my-component
 └── my-component.yml
 ```
 
-In the **YAML file**, you can specify as much options as for the main component:
+In the **YAML file**, you can specify as many options as for the main component:
   ```yaml
   title: My Component
   name: my-component

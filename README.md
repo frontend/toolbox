@@ -1,6 +1,6 @@
 # Introduction
 
-**Toolbox** is not only a styleguide generator and a developer toolset, first of all, it's a complete **frontend atomic development workflow** based on three main modules.
+**Toolbox** is not only a styleguide generator and a developer tool set, first of all, it's a complete **frontend atomic development workflow** based on three main modules.
 
 ## The Generator
 
@@ -14,10 +14,10 @@ Learn more about how to :
 
 ## The Utilities
 
-[`toolbox-utils`](https://github.com/frontend/toolbox-utils) is the encapsulated build tasks module. Based on [Gulp](https://gulpjs.com/) and [Webpack](https://webpack.js.org/), those utilities offers you anything you need in your frontend development process in a single dev dependency. It will mainly :
+[`toolbox-utils`](https://github.com/frontend/toolbox-utils) is the encapsulated build task module. Based on [Gulp](https://gulpjs.com/) and [Webpack](https://webpack.js.org/), those utilities offers you anything you need in your frontend development process in a single dev dependency. It will mainly :
 
 - **serve** the styleguide
-- **build** your project's **styles (Sass)** and **scrips (ES6+)** on each saves
+- **build** your project's **styles (Sass)** and **scrips (ES6+)** on each save
 - create a **SVG icon set** based on files
 - help you working with **frameworks**
 - create the dev and production **bundles**
@@ -30,7 +30,7 @@ Learn more about how to :
 
 ## The Reader
 
-Instead of building a static documentation, [`toolbox-reader`](https://github.com/frontend/toolbox-reader) will **read your components library** and display them in a nice and presentable interface. It's a very **usefull tool to collaborate** with designers, client and other developers. And each time a new feature is added to the reader, any old styleguides will have it directly.
+Instead of building a static documentation, [`toolbox-reader`](https://github.com/frontend/toolbox-reader) will **read your component library** and display them in a nice and presentable interface. It's a very **usefull tool to collaborate** with designers, client and other developers. And each time a new feature is added to the reader, any old styleguides will have it directly.
 
 Learn more about how to :
 
@@ -38,4 +38,5 @@ Learn more about how to :
 - [Style components](/styling)
 - [Script components](/scripting)
 - [Write documentation](/docs)
+
 

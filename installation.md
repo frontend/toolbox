@@ -2,7 +2,7 @@
 
 ### Installing Toolbox
 
-Before you can run the generator, you need to make sure you have the latest version of **[Yeoman](http://yeoman.io/)**, **[Yarn](https://yarnpkg.com/)** (optional, but recommanded) and **[Node 8+](https://nodejs.org/en/)** installed.
+Before you can run the generator, you need to make sure you have the latest version of **[Yeoman](http://yeoman.io/)**, **[Yarn](https://yarnpkg.com/)** (optional, but recommended) and **[Node 8+](https://nodejs.org/en/)** installed.
 
 ```shell
 $ npm install -g yo yarn
