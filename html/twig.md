@@ -87,8 +87,8 @@ With Twig you can add a bit of logic in your template. **Try to keep things alwa
 ./assets/components/molecules/news-teaser/news-teaser.twig
 ```twig
 <a class="teaser" href="#">
-  <h4>{{title}}</h4>
-  <p>{{excerpt}}</p>
+  <h4>{{ title ?: 'Default title' }}</h4>
+  <p>{{ excerpt ?: 'Default excerpt...' }}</p>
 </a>
 ```
 
