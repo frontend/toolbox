@@ -21,8 +21,20 @@
 }
 
 .site-header-sm {
+  padding: 1px 0.4em;
   height: $header-height;
-  background: gray;
+  background: $cadet-blue;
+  font-size: 1.2em;
+
+  .container { margin: 0.5em; }
+
+  a { font-size: 1em !important; }
+
+  img {
+    display: inline-block;
+    width: auto;
+    max-height: $header-height - 20;
+  }
 }
 
 .homepage-navigation {

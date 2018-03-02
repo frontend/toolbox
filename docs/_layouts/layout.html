@@ -21,8 +21,22 @@
   {% block head %}{% endblock %}
 </head>
 <body>
-  <header class="site-header">
-    <a href="/">Homepage</a>
+  <header class="site-header site-header-sm">
+    <div class="container">
+      <div class="logo-wrapper">
+        <a href="{{ ''|resolveAsset }}/../"><img src="{{ ''|resolveAsset }}/../assets/toolbox.svg" alt="Toolbox logotype"></a>
+      </div>
+
+      <nav class="homepage-navigation">
+        <a href="#features">Features</a>
+        <a href="introductions.html">Docs</a>
+        <a href="http://github.com/frontend/generator-toolbox" target="_blank">
+          <i class="icon icon-github"></i>
+          Github
+        </a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
   </header>
   {% block body %}{% endblock %}
   {% block javascript %}{% endblock %}

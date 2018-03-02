@@ -2,24 +2,27 @@
 
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif !important;
+}
+
+.homepage {
   font-size: 18px;
 
   @media only screen and (max-width: 920px) { font-size: 16px; }
   @media only screen and (max-width: 767px) { font-size: 14px; }
 }
 
-h1 { font-size: 1.94rem; }
-h3 { font-size: 1.55rem; }
+.homepage h1 { font-size: 1.94rem; }
+.homepage h3 { font-size: 1.55rem; }
 
-h2 {
+.homepage h2 {
   font-size: 1.77rem;
   font-weight: 400;
 }
 
-p { line-height: 1.6em; }
+.homepage p { line-height: 1.6em; }
 
-a {
+.homepage a {
   color: $cadet-blue;
   text-decoration: underline;
   transition:
