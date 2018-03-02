@@ -17,7 +17,7 @@ Basically, you will need **2 files**. For example, with Bootstrap, you will need
 To **create the `bootstrap-variables.scss`**, type the following command to get the related file of your installed Bootstrap version :
 
 ```bash
-$ cp node_modules/bootstrap/scss/_variables.scss assets/config/boostrap-variables.scss
+$ cp node_modules/bootstrap/scss/_variables.scss assets/config/bootstrap-variables.scss
 ```
 
 **bootstrap.scss** will import all the Bootstrap parts that you need. Remember, import only what you need to keep your CSS bundle as light as possible. This **bootstrap.scss** will be imported at the top of our Sass entry file.
