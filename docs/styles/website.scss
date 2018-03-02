@@ -7,6 +7,15 @@
 
 @import './inc/header';
 @import './inc/hero';
+@import './inc/animation';
+@import './inc/features';
+@import './inc/bottom-ctas';
+@import './inc/footer';
+
+.homepage {
+  background: $cinder;
+  color: $cadet-blue;
+}
 
 
 // Gitbook Fixes ==========================================

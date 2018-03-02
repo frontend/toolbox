@@ -1,0 +1,16 @@
+@charset 'utf-8';
+
+.homepage-features {
+  .row { margin: 4rem 0; }
+}
+
+.feature-illustration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .homepage-features .order-first { order: unset; }
+}

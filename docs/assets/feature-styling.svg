@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="112px" height="121px" viewBox="0 0 112 121" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>1-paint-roller-outline-</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-652.000000, -2446.000000)" stroke="#ABB2BF" stroke-width="2">
+            <g id="1-paint-roller-outline-" transform="translate(652.000000, 2447.000000)">
+                <path d="M96.8723404,29 L8.12765957,29 C5.84712766,29 4,27.1460714 4,24.8571429 L4,4.14285714 C4,1.856 5.84712766,0 8.12765957,0 L96.8723404,0 C99.1528723,0 101,1.856 101,4.14285714 L101,24.8571429 C101,27.1460714 99.1528723,29 96.8723404,29 Z" id="Stroke-1285"></path>
+                <path d="M51,67 L51,52.7063077 C51,49.3122692 53.762069,46.6153846 57.2068966,46.6153846 C57.2068966,46.6153846 100.92,42.9053846 102.74069,42.5384615 C107.457931,41.5885385 111,37.2751538 111,32.3461538 L111,24.1923077 C111,18.558 106.373793,14 100.655172,14" id="Stroke-1286"></path>
+                <path d="M4,14 L0,14" id="Stroke-1287"></path>
+                <path d="M43,100 L49,100" id="Stroke-1288"></path>
+                <path d="M43,109 L49,109" id="Stroke-1289"></path>
+                <path d="M66,68 L37,68 L39.0714286,78.2 L43.2142857,78.2 L43.2142857,110.84 C43.2142857,115.34636 46.9242143,119 51.5,119 C56.0757857,119 59.7857143,115.34636 59.7857143,110.84 L59.7857143,78.2 L63.9285714,78.2 L66,68 Z" id="Stroke-1290"></path>
+                <path d="M4,21 L27,21" id="Stroke-1291"></path>
+                <path d="M4,8 L47,8" id="Stroke-1292"></path>
+                <path d="M84,8 L100,8" id="Stroke-1293"></path>
+                <path d="M64,21 L101,21" id="Stroke-1294"></path>
+            </g>
+        </g>
+    </g>
+</svg>

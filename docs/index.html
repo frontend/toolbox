@@ -22,14 +22,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
 
   <link rel="stylesheet" href="./styles/website.css">
+  <script src="./assets/vivus.min.js"></script>
 </head>
-<body>
+<body class="homepage">
 
   <div class="homepage-top">
     <header class="site-header">
       <div class="container">
         <div class="logo-wrapper">
-          <a href="/"><img src="images/toolbox.svg" alt="Toolbox logotype"></a>
+          <a href="/"><img src="assets/toolbox.svg" alt="Toolbox logotype"></a>
         </div>
 
         <nav class="homepage-navigation">
@@ -44,8 +45,9 @@
       </div>
     </header>
 
-    <div class="homepage-hero">
-      <div class="container">
+
+    <div class="container">
+      <div class="homepage-hero">
         <div class="row justify-content-md-center">
           <div class="col-sm-8">
             <h1>Complete Frontend Atomic Workflow</h1>
@@ -59,11 +61,169 @@
           </div>
         </div>
       </div>
+
+      <div class="homepage-animation-wrapper">
+        <a href="introduction.html#the-generator" class="homepage-animation-label">Generator</a>
+        <a href="introduction.html#the-utilities" class="homepage-animation-label">Utilities</a>
+        <a href="introduction.html#the-reader" class="homepage-animation-label">Reader</a>
+        <div id="bm" class="homepage-animation"></div>
+      </div>
     </div>
   </div>
 
-  <!-- Place this tag in your head or just before your close body tag. -->
+  <div class="container">
+    <div class="row justify-content-md-center homepage-features">
+      <div class="col-sm-10">
+        <h2 class="text-center">Main features</h2>
+
+        <div class="row">
+          <div class="col-sm-5 feature-illustration">
+            <object id="feature-scaffold" type="image/svg+xml" data="assets/feature-scaffold.svg"></object>
+            <script> new Vivus('feature-scaffold', {duration: 100});</script>
+          </div>
+          <div class="col-sm-6 order-first">
+            <h3>Configurable Scaffolding</h3>
+            <p>
+              With <a href="http://github.com/frontend/generator-toolbox" target="_blank">generator-toolbox</a>, you can quickly create a new projects using your own parameters and preferences. It will <strong>fit perfectly with any types of backend</strong> file structure.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-5 feature-illustration">
+            <object id="feature-atomic" type="image/svg+xml" data="assets/feature-atomic.svg"></object>
+            <script> new Vivus('feature-atomic', {duration: 100});</script>
+          </div>
+          <div class="col-sm-6">
+            <h3>Atomic</h3>
+            <p>
+              Based on the common Atomic Design Principles, Toolbox allows you to create seamlessly <strong>your own components library entirely live</strong> documented.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-5 feature-illustration">
+            <object id="feature-automated" type="image/svg+xml" data="assets/feature-automated.svg"></object>
+            <script> new Vivus('feature-automated', {duration: 100});</script>
+          </div>
+          <div class="col-sm-6 order-first">
+            <h3>Automated</h3>
+            <p>
+              Toolbox came, out of the box, with a <strong>complete set of Gulp tasks</strong> who will process all your project’s file automatically, on each save, without taking care of.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-5 feature-illustration">
+            <object id="feature-styling" type="image/svg+xml" data="assets/feature-styling.svg"></object>
+            <script> new Vivus('feature-styling', {duration: 100});</script>
+          </div>
+          <div class="col-sm-6">
+            <h3>Smooth styling</h3>
+            <p>
+              By using <strong>all the features who came with Sass</strong>, your styling process will be much cleaner and more maintainable. The linter embed will also help you to be more <strong>accurate</strong> and <strong>consistent</strong>.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-5 feature-illustration">
+            <object id="feature-scripts" type="image/svg+xml" data="assets/feature-scripts.svg"></object>
+            <script> new Vivus('feature-scripts', {duration: 100});</script>
+          </div>
+          <div class="col-sm-6 order-first">
+            <h3>Modern scripts</h3>
+            <p>
+              The <strong>Toolbox’s Webpack configuration</strong> will help you debuging your <strong>ES6+</strong> components scripts and seamlessly bundles them for production pruposes.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-5 feature-illustration">
+            <object id="feature-templating" type="image/svg+xml" data="assets/feature-templating.svg"></object>
+            <script> new Vivus('feature-templating', {duration: 100});</script>
+          </div>
+          <div class="col-sm-6">
+            <h3>Advanced templating</h3>
+            <p>
+              Very popular in many applications and CMS communities, <strong>Twig will help you write and embedding components</strong>. You can still write plain HTML, but you will miss a lot of good stuff.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-5 feature-illustration">
+            <object id="feature-documentation" type="image/svg+xml" data="assets/feature-documentation.svg"></object>
+            <script> new Vivus('feature-documentation', {duration: 100});</script>
+          </div>
+          <div class="col-sm-6 order-first">
+            <h3>Documentation</h3>
+            <p>
+              Aside of your components library, Toolbox allows you to <strong>write documentation pages using Markdown or HTML</strong> with a flexible hierarchy.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-5 feature-illustration">
+            <object id="feature-customizable" type="image/svg+xml" data="assets/feature-customizable.svg"></object>
+            <script> new Vivus('feature-customizable', {duration: 100});</script>
+          </div>
+          <div class="col-sm-6">
+            <h3>Customizable</h3>
+            <p>
+              The Toolbox generated documentation must look like your project’s guidelines. So you can <strong>completely customize how the styleguide</strong> will look like and make it feel like home.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-ctas">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Install the Generator to get started</h3>
+          <pre>npm install -g yo generator-toolbox</pre>
+        </div>
+        <div class="col-sm-6">
+          <div class="text-right">
+            <a href="http://github.com/frontend/generator-toolbox" target="_blank" class="btn btn-secondary">
+            <i class="icon icon-github"></i>
+              View on Github
+            </a>
+            <a href="introduction.html" class="btn btn-ternary">Explore the Doc</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      Supported and maintained by
+      <a href="https://antistatique.net">
+        <img src="./assets/antistatique.svg" alt="Antistatique logo, swiss based web agency">
+      </a>
+    </div>
+  </footer>
+
   <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script src="./assets/lottie.js"></script>
+  <script>
+    var animation = lottie.loadAnimation({
+      container: document.getElementById('bm'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: false,
+      path: './assets/animation.json'
+    })
+  </script>
 
   <script>
     var gitbook = gitbook || [];

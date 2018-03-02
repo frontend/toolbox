@@ -17,3 +17,23 @@
 
   &:hover { color: $harvest-gold; }
 }
+
+.btn-secondary {
+  background: $cadet-blue;
+  color: $cinder;
+
+  &:hover {
+    background: $white;
+    color: $cinder;
+  }
+}
+
+.btn-ternary {
+  background: $olivine;
+  color: $cinder;
+
+  &:hover {
+    color: $cinder;
+    background: $lavender;
+  }
+}

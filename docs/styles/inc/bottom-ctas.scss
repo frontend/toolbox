@@ -1,0 +1,20 @@
+@charset 'utf-8';
+
+.bottom-ctas {
+  background: darken($cinder, 10%);
+  padding: 2rem 0;
+
+  [class*="col-"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h3 { margin: 0; }
+
+  pre {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    background: $cinder;
+  }
+}
