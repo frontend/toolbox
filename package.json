@@ -1,0 +1,18 @@
+{
+  "name": "toolbox-documentation",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:frontend/toolbox.git",
+  "author": "Antistatique",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.23.6",
+    "gitbook-cli": "^2.3.2",
+    "node-sass": "^4.7.2"
+  },
+  "scripts": {
+    "start": "gitbook serve",
+    "styles": "node-sass --watch docs/styles/website.scss docs/styles/website.css",
+    "serve": "browser-sync start --server --files \"./**/*\" --port 3300 --directory"
+  }
+}

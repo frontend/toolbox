@@ -1,0 +1,19 @@
+@charset 'utf-8';
+
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1.4rem;
+  border-radius: 4px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+
+.btn-primary {
+  background: $cinder;
+  color: $cadet-blue;
+
+  &:hover { color: $harvest-gold; }
+}

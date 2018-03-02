@@ -16,11 +16,54 @@
   <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
   <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
   <link rel="next" href="introduction.html" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap-grid.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+
+  <link rel="stylesheet" href="./styles/website.css">
 </head>
 <body>
-  <h1>Yo</h1>
-  <a href="introduction.html">Intro</a>
-  <a href="css/css.html">Intro</a>
+
+  <div class="homepage-top">
+    <header class="site-header">
+      <div class="container">
+        <div class="logo-wrapper">
+          <a href="/"><img src="images/toolbox.svg" alt="Toolbox logotype"></a>
+        </div>
+
+        <nav class="homepage-navigation">
+          <a href="#features">Features</a>
+          <a href="introductions.html">Docs</a>
+          <a href="http://github.com/frontend/generator-toolbox" target="_blank">
+            <i class="icon icon-github"></i>
+            Github
+          </a>
+          <a href="about.html">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="homepage-hero">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-sm-8">
+            <h1>Complete Frontend Atomic Workflow</h1>
+            <p>
+              “More than a tool set, <strong>Toolbox</strong> offers you a <strong>mature</strong> and <strong>cutting edge</strong> frontend approach to work with <strong>styleguides”</strong>
+            </p>
+            <div class="btn-wrapper">
+              <a href="introductions.html" class="btn btn-primary">Get Started</a>
+              <a class="github-button" href="https://github.com/frontend/generator-toolbox" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star frontend/generator-toolbox on GitHub">Star</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
 
   <script>
     var gitbook = gitbook || [];

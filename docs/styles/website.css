@@ -1,16 +1,98 @@
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px; }
+
+h1 {
+  font-size: 1.94rem; }
+
+p {
+  line-height: 1.6em; }
+
+.icon {
+  display: inline-flex;
+  align-self: center;
+  position: relative;
+  top: 0.11em;
+  width: 1em;
+  height: 1em;
+  background-size: cover; }
+  .icon-right .icon {
+    margin-left: 0.4em; }
+  .icon-left .icon {
+    margin-right: 0.4em; }
+  .icon.icon-github {
+    background-image: url("../images/github.svg"); }
+
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1.4rem;
+  border-radius: 4px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s; }
+
+.btn-primary {
+  background: #161821;
+  color: #abb2bf; }
+  .btn-primary:hover {
+    color: #e5c07b; }
+
+.homepage-top {
+  background: radial-gradient(ellipse at top, #ABB2BF 0%, #8B9AAA 100%); }
+
 .site-header {
+  padding: 1.6rem 0; }
+  .site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+.site-header-sm {
   height: 50px;
-  background: gray;
-}
+  background: gray; }
+
+.homepage-navigation a {
+  padding: 0 1rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #161821; }
+  .homepage-navigation a:hover {
+    color: #000; }
+
+.homepage-hero {
+  padding: 1rem 0;
+  text-align: center; }
+  .homepage-hero h1 {
+    margin-bottom: 0; }
+  .homepage-hero p {
+    max-width: 75%;
+    margin: 0.6rem 0;
+    margin-bottom: 1.6rem;
+    font-style: italic;
+    font-size: 1.44rem; }
+  .homepage-hero [class*="col-"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.btn-wrapper {
+  display: flex;
+  justify-items: center;
+  align-items: center; }
+  .btn-wrapper .btn {
+    margin-right: 1rem; }
 
 .book {
-  height: calc(100% - 50px);
-}
+  height: calc(100% - $header-height); }
 
-.summary .chapter:first-child { display: none; }
+.summary .chapter:first-child {
+  display: none; }
 
 @media only screen and (min-width: 768px) {
-  .book .book-summary { left: 0 !important; }
-  .book .book-body { left: 300px !important; }
-  .book-header .js-toolbar-action:first-child { display: none; }
-}
+  .book .book-summary {
+    left: 0 !important; }
+  .book .book-body {
+    left: 300px !important; }
+  .book-header .js-toolbar-action:first-child {
+    display: none; } }
