@@ -1,6 +1,7 @@
 # Summary
 
-* [Introduction](README.md)
+* [Homepage](README.md)
+* [Introduction](introduction.md)
 * [Installation](installation.md)
 * [New project](new-project/new-project.md)
   * [File structure](new-project/file-structure.md)

@@ -1,0 +1,16 @@
+.site-header {
+  height: 50px;
+  background: gray;
+}
+
+.book {
+  height: calc(100% - 50px);
+}
+
+.summary .chapter:first-child { display: none; }
+
+@media only screen and (min-width: 768px) {
+  .book .book-summary { left: 0 !important; }
+  .book .book-body { left: 300px !important; }
+  .book-header .js-toolbar-action:first-child { display: none; }
+}

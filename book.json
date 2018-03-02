@@ -1,1 +1,8 @@
-{}
+{
+  "root": "docs",
+  "title": "Toolbox - Complete Frontend Atomic Workflow",
+  "author": "Antistatique",
+  "plugins": [
+    "search"
+  ]
+}
