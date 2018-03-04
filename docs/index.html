@@ -71,6 +71,20 @@
     </div>
   </div>
 
+  <div class="homepage-demo text-center">
+    <div class="container">
+      <div class="row justify-content-md-center homepage-features">
+        <div class="col-sm-10">
+          <h2 class="text-center">Demo</h2>
+          <a href="https://frontend.github.io/toolbox-demo" target="_blank">
+            <img src="assets/demo.png" alt="Toolbox demo" class="img-fluid">
+          </a>
+          <a href="https://frontend.github.io/toolbox-demo" class="btn btn-secondary" target="_blank">Check the Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="container">
     <div class="row justify-content-md-center homepage-features">
       <div class="col-sm-10">
@@ -79,7 +93,7 @@
         <div class="row">
           <div class="col-sm-5 feature-illustration">
             <object id="feature-scaffold" type="image/svg+xml" data="assets/feature-scaffold.svg"></object>
-            <script> new Vivus('feature-scaffold', {duration: 100});</script>
+            <script> new Vivus('feature-scaffold', {duration: 50});</script>
           </div>
           <div class="col-sm-6 order-first">
             <h3>Configurable Scaffolding</h3>
@@ -92,7 +106,7 @@
         <div class="row">
           <div class="col-sm-5 feature-illustration">
             <object id="feature-atomic" type="image/svg+xml" data="assets/feature-atomic.svg"></object>
-            <script> new Vivus('feature-atomic', {duration: 100});</script>
+            <script> new Vivus('feature-atomic', {duration: 50});</script>
           </div>
           <div class="col-sm-6">
             <h3>Atomic</h3>
@@ -105,7 +119,7 @@
         <div class="row">
           <div class="col-sm-5 feature-illustration">
             <object id="feature-automated" type="image/svg+xml" data="assets/feature-automated.svg"></object>
-            <script> new Vivus('feature-automated', {duration: 100});</script>
+            <script> new Vivus('feature-automated', {duration: 50});</script>
           </div>
           <div class="col-sm-6 order-first">
             <h3>Automated</h3>
@@ -118,7 +132,7 @@
         <div class="row">
           <div class="col-sm-5 feature-illustration">
             <object id="feature-styling" type="image/svg+xml" data="assets/feature-styling.svg"></object>
-            <script> new Vivus('feature-styling', {duration: 100});</script>
+            <script> new Vivus('feature-styling', {duration: 50});</script>
           </div>
           <div class="col-sm-6">
             <h3>Smooth styling</h3>
@@ -131,7 +145,7 @@
         <div class="row">
           <div class="col-sm-5 feature-illustration">
             <object id="feature-scripts" type="image/svg+xml" data="assets/feature-scripts.svg"></object>
-            <script> new Vivus('feature-scripts', {duration: 100});</script>
+            <script> new Vivus('feature-scripts', {duration: 50});</script>
           </div>
           <div class="col-sm-6 order-first">
             <h3>Modern scripts</h3>
@@ -144,7 +158,7 @@
         <div class="row">
           <div class="col-sm-5 feature-illustration">
             <object id="feature-templating" type="image/svg+xml" data="assets/feature-templating.svg"></object>
-            <script> new Vivus('feature-templating', {duration: 100});</script>
+            <script> new Vivus('feature-templating', {duration: 50});</script>
           </div>
           <div class="col-sm-6">
             <h3>Advanced templating</h3>
@@ -157,7 +171,7 @@
         <div class="row">
           <div class="col-sm-5 feature-illustration">
             <object id="feature-documentation" type="image/svg+xml" data="assets/feature-documentation.svg"></object>
-            <script> new Vivus('feature-documentation', {duration: 100});</script>
+            <script> new Vivus('feature-documentation', {duration: 50});</script>
           </div>
           <div class="col-sm-6 order-first">
             <h3>Documentation</h3>
@@ -170,7 +184,7 @@
         <div class="row">
           <div class="col-sm-5 feature-illustration">
             <object id="feature-customizable" type="image/svg+xml" data="assets/feature-customizable.svg"></object>
-            <script> new Vivus('feature-customizable', {duration: 100});</script>
+            <script> new Vivus('feature-customizable', {duration: 50});</script>
           </div>
           <div class="col-sm-6">
             <h3>Customizable</h3>
@@ -220,7 +234,7 @@
       container: document.getElementById('bm'),
       renderer: 'svg',
       loop: true,
-      autoplay: false,
+      autoplay: true,
       path: './assets/animation.json'
     })
   </script>

@@ -227,8 +227,22 @@ body,
   .homepage-animation-wrapper {
     display: none; } }
 
-.homepage-features .row {
-  margin: 4rem 0; }
+.homepage-demo {
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+  background: radial-gradient(ellipse at center, #161821 0%, #020202 100%);
+  box-shadow: inset 0 -10px 15px 0 black; }
+
+.img-fluid {
+  display: inline-block;
+  max-width: 100%;
+  width: auto;
+  height: auto; }
+
+.homepage-features {
+  padding-top: 2rem; }
+  .homepage-features .row {
+    margin: 4rem 0; }
 
 .feature-illustration {
   display: flex;
@@ -269,6 +283,7 @@ body,
 
 .homepage {
   background: #161821;
+  background: linear-gradient(to top, #161821 0%, #0e0f15 100%);
   color: #abb2bf; }
 
 .book {

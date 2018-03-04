@@ -8,6 +8,7 @@
 @import './inc/header';
 @import './inc/hero';
 @import './inc/animation';
+@import './inc/demo';
 @import './inc/features';
 @import './inc/bottom-ctas';
 @import './inc/footer';
@@ -16,6 +17,7 @@
 
 .homepage {
   background: $cinder;
+  background: linear-gradient(to top, $cinder 0%, darken($cinder, 4%) 100%);
   color: $cadet-blue;
 }
 
