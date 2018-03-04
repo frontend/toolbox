@@ -18,6 +18,19 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  @media only screen and (max-width: 767px) {
+    .homepage & nav a:nth-child(1),
+    .homepage & nav a:nth-child(4) {
+      display: none;
+    }
+
+    img {
+      display: inline-block;
+      width: auto;
+      max-height: $header-height - 20;
+    }
+  }
 }
 
 .site-header-sm {
@@ -35,6 +48,13 @@
     width: auto;
     max-height: $header-height - 20;
   }
+
+  @media only screen and (max-width: 767px) {
+    nav a:nth-child(1),
+    nav a:nth-child(2) {
+      display: none;
+    }
+  }
 }
 
 .homepage-navigation {
@@ -46,6 +66,7 @@
 
     &:hover {
       background: $harvest-gold;
+      color: $cinder;
     }
   }
 }

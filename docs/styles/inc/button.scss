@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-.btn {
+.homepage .btn {
   display: inline-block;
   padding: 0.65rem 1.4rem;
   border-radius: 4px;
@@ -11,14 +11,14 @@
     color 0.15s;
 }
 
-.btn-primary {
+.homepage .btn-primary {
   background: $cinder;
   color: $cadet-blue;
 
   &:hover { color: $harvest-gold; }
 }
 
-.btn-secondary {
+.homepage .btn-secondary {
   background: $cadet-blue;
   color: $cinder;
 
@@ -28,7 +28,7 @@
   }
 }
 
-.btn-ternary {
+.homepage .btn-ternary {
   background: $olivine;
   color: $cinder;
 

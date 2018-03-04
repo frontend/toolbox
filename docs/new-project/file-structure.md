@@ -2,7 +2,7 @@
 
 A fresh Toolbox project looks like this :
 
-```plain
+```
 .
 ├── CHANGELOG.md                          ← Project changelog (optional)
 ├── README.md                             ← Documentation (install, contribution, etc)

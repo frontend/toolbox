@@ -1,5 +1,7 @@
 html,
-body {
+body,
+.book-summary,
+.book-header {
   font-family: 'Ubuntu', Helvetica, Arial, sans-serif !important; }
 
 .homepage {
@@ -52,7 +54,7 @@ body {
   .icon.icon-github {
     background-image: url("../assets/github.svg"); }
 
-.btn {
+.homepage .btn {
   display: inline-block;
   padding: 0.65rem 1.4rem;
   border-radius: 4px;
@@ -60,23 +62,23 @@ body {
   text-decoration: none;
   transition: background 0.15s, color 0.15s; }
 
-.btn-primary {
+.homepage .btn-primary {
   background: #161821;
   color: #abb2bf; }
-  .btn-primary:hover {
+  .homepage .btn-primary:hover {
     color: #e5c07b; }
 
-.btn-secondary {
+.homepage .btn-secondary {
   background: #abb2bf;
   color: #161821; }
-  .btn-secondary:hover {
+  .homepage .btn-secondary:hover {
     background: #fff;
     color: #161821; }
 
-.btn-ternary {
+.homepage .btn-ternary {
   background: #98c379;
   color: #161821; }
-  .btn-ternary:hover {
+  .homepage .btn-ternary:hover {
     color: #161821;
     background: #c678dd; }
 
@@ -94,6 +96,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between; }
+  @media only screen and (max-width: 767px) {
+    .homepage .site-header nav a:nth-child(1),
+    .homepage .site-header nav a:nth-child(4) {
+      display: none; }
+    .site-header img {
+      display: inline-block;
+      width: auto;
+      max-height: 40px; } }
 
 .site-header-sm {
   padding: 1px 0.4em;
@@ -108,6 +118,10 @@ body {
     display: inline-block;
     width: auto;
     max-height: 40px; }
+  @media only screen and (max-width: 767px) {
+    .site-header-sm nav a:nth-child(1),
+    .site-header-sm nav a:nth-child(2) {
+      display: none; } }
 
 .homepage-navigation a {
   padding: 0.3rem 1rem;
@@ -115,7 +129,8 @@ body {
   font-size: 1.2rem;
   color: #161821; }
   .homepage-navigation a:hover {
-    background: #e5c07b; }
+    background: #e5c07b;
+    color: #161821; }
 
 .homepage-hero {
   padding: 1rem 0;
@@ -132,6 +147,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; }
+  @media only screen and (max-width: 767px) {
+    .homepage-hero p {
+      font-size: 1rem; } }
 
 .btn-wrapper {
   display: flex;

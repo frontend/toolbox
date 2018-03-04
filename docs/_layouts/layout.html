@@ -24,17 +24,17 @@
   <header class="site-header site-header-sm">
     <div class="container">
       <div class="logo-wrapper">
-        <a href="{{ ''|resolveAsset }}/../"><img src="{{ ''|resolveAsset }}/../assets/toolbox.svg" alt="Toolbox logotype"></a>
+        <a href="{% for i in range(0, page.depth) %}../{% endfor %}index.html"><img src="{% for i in range(0, page.depth) %}../{% endfor %}assets/toolbox.svg" alt="Toolbox logotype"></a>
       </div>
 
       <nav class="homepage-navigation">
-        <a href="#features">Features</a>
-        <a href="introductions.html">Docs</a>
+        <a href="{% for i in range(0, page.depth) %}../{% endfor %}index.html#features">Features</a>
+        <a href="{% for i in range(0, page.depth) %}../{% endfor %}introductions.html">Docs</a>
         <a href="http://github.com/frontend/generator-toolbox" target="_blank">
           <i class="icon icon-github"></i>
           Github
         </a>
-        <a href="about.html">About</a>
+        <a href="{% for i in range(0, page.depth) %}../{% endfor %}about.html">About</a>
       </nav>
     </div>
   </header>

@@ -6,7 +6,7 @@ You can choose to write documentation using **[Markdown](https://daringfireball.
 
 This is an example of what can your `./docs` folder can look like :
 
-```plain
+```
 .
 └── docs/
     ├── index.md            ← Styleguide's homepage
