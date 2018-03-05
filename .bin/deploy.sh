@@ -26,7 +26,7 @@ echo "Generating site"
 yarn build
 
 echo "Updating gh-pages branch"
-cd _book && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
+cd _book && git add --all && git commit -m "Publishing to gh-pages (deploy.sh)"
 
 echo "Pushing gh-pages branch"
 git push origin gh-pages
