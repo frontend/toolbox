@@ -81,5 +81,5 @@ Will **generate the `index.html`** used by [`toolbox-reader`](https://github.com
 ### Next steps
 
 - [Learn how to write your variant using Twig](html/writing.html)
-- [Learn how to style your variant using Sass](css.html)
+- [Learn how to style your variant using Sass](css/css.html)
 - [Learn how to script your variant using ES6+](javascript.html)
