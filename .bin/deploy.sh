@@ -11,22 +11,22 @@ then
 fi
 
 echo "Deleting old publication"
-rm -rf _book
-mkdir _book
+rm -rf public
+mkdir public
 git worktree prune
-rm -rf .git/worktrees/_book/
+rm -rf .git/worktrees/public/
 
-echo "Checking out gh-pages branch into _book"
-git worktree add -B gh-pages _book origin/gh-pages
+echo "Checking out gh-pages branch into public"
+git worktree add -B gh-pages public origin/gh-pages
 
 echo "Removing existing files"
-rm -rf _book/*
+rm -rf public/*
 
 echo "Generating site"
 yarn build
 
 echo "Updating gh-pages branch"
-cd _book && git add --all && git commit -m "Publishing to gh-pages (deploy.sh)"
+cd public && git add --all && git commit -m "Publishing to gh-pages (deploy.sh)"
 
 echo "Pushing gh-pages branch"
 git push origin gh-pages

@@ -13,9 +13,9 @@
     "prismjs": "^1.11.0"
   },
   "scripts": {
-    "start": "gitbook serve",
-    "build_book": "gitbook build",
-    "build_index": "cp -rf docs/index.html _book/index.html",
+    "start": "gitbook install && gitbook serve",
+    "build_book": "gitbook install && gitbook build docs public",
+    "build_index": "cp -rf docs/index.html public/index.html",
     "build_styles": "node-sass docs/styles/website.scss docs/styles/website.css",
     "build": "yarn build_styles && yarn build_book && yarn build_index",
     "styles": "node-sass --watch docs/styles/website.scss docs/styles/website.css",
