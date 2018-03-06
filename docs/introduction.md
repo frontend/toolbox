@@ -25,8 +25,8 @@ Learn more about how to :
 
 Learn more about how to :
 
-- [Define your project's parameters](#)
-- [Adding libraries to your project](#)
+- [Define your project's parameters](new-project/configuration.html)
+- [Adding libraries to your project](css/bootstrap4.html)
 
 ## The Reader
 
@@ -34,9 +34,9 @@ Instead of building a static documentation, [`toolbox-reader`](https://github.co
 
 Learn more about how to :
 
-- [Write components](/writing)
-- [Style components](/styling)
-- [Script components](/scripting)
-- [Write documentation](/docs)
+- [Write components](html/writing.html)
+- [Style components](css/css.html)
+- [Script components](javascript.html)
+- [Write documentation](documentation.html)
 
 
