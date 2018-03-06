@@ -27,9 +27,11 @@ The **YAML file** is the configuration for this file. It can contain several thi
   ```yaml
   title: My Component               ← Component title
   name: my-component                ← Component identifier or slug
+  notes: |
+    some notes                      ← documentation for the component (markdown)
   wrapper: ".container .bg-dark"    ← Wrapper Class(es)
   background: "#f00"                ← Background color of the preview box
-  variants: |                       ← Variants list (see "New variant")
+  variants:                         ← Variants list (see "New variant")
     - ...
     - ...
   ```

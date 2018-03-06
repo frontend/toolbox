@@ -24,11 +24,15 @@ In the **YAML file**, you can specify as many options as for the main component:
   ```yaml
   title: My Component
   name: my-component
+  notes: |
+    some notes                          ← documentation for the component (markdown)
   wrapper: ".container .bg-dark"
   background: "#f00" 
-  variants: |
+  variants:
     - title: My secondary Component     ← Variant title
       name: secondary                   ← Variant slug (without component slug)
+      notes: |
+        some notes                      ← documentation for the variant (markdown)
       wrapper: ".bg-light"              ← Wrapper Class(es)
       background: "#00f"                ← Background color of the preview box
     - ...
