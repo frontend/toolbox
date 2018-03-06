@@ -79,9 +79,9 @@
 }
 
 @media only screen and (min-width: 1140px) {
-  .homepage-animation-label { font-size: 1.44rem; }
+  .homepage .homepage-animation-label { font-size: 1.44rem; }
 }
 
 @media only screen and (max-width: 767px) {
-  .homepage-animation-wrapper { display: none; }
+  .homepage .homepage-animation-wrapper { display: none; }
 }
