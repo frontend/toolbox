@@ -220,11 +220,11 @@ body,
       right: 50%; }
 
 @media only screen and (min-width: 1140px) {
-  .homepage-animation-label {
+  .homepage .homepage-animation-label {
     font-size: 1.44rem; } }
 
 @media only screen and (max-width: 767px) {
-  .homepage-animation-wrapper {
+  .homepage .homepage-animation-wrapper {
     display: none; } }
 
 .homepage-demo {
