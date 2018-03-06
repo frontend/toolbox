@@ -1,3 +1,3 @@
 const ghpages = require('gh-pages');
 
-ghpages.publish('public', (err) => { console.error(err); });
+ghpages.publish('_book', (err) => { console.error(err); });
