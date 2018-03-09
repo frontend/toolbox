@@ -31,9 +31,14 @@ export default () => {
 
 import toggle from './components/atoms/toggle/toggle.js';
 
-$(document).ready(() => {
+const init = () => {
   toggle();
-});
+};
+
+(function ($) {
+  $(document).ready(() => init());
+})(jQuery);
+document.addEventListener('ToolboxReady', () => init());
 ```
 
 ## Linting
