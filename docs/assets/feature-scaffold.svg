@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="87px" height="126px" viewBox="0 0 87 126" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>1-file-list-outline-</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-1142.000000, -1391.000000)" stroke="#ABB2BF" stroke-width="2">
+            <g id="1-file-list-outline-" transform="translate(1143.000000, 1392.000000)">
+                <path d="M53.25,8.59686828 L53.25,4.29843414 C53.25,1.92354928 51.3236,0 48.95,0 L36.05,0 C33.6764,0 31.75,1.92354928 31.75,4.29843414 L31.75,8.59686828 L23.15,8.59686828 C21.9632,8.59686828 21,9.55971753 21,10.7460854 L21,25.8206939 C21,27.0242554 21.9761,28 23.1801,28 L61.8199,28 C63.0239,28 64,27.0242554 64,25.8206939 L64,10.7460854 C64,9.55971753 63.0368,8.59686828 61.85,8.59686828 L53.25,8.59686828 Z" id="Stroke-1"></path>
+                <path d="M63.75,15 L63.75,25.7132552 C63.75,26.9097895 62.78525,27.8798369 61.59525,27.8798369 L23.40475,27.8798369 C22.21475,27.8798369 21.25,26.9097895 21.25,25.7132552 L21.25,15 L0,15 L0,124 L85,124 L85,15 L63.75,15 Z" id="Stroke-3"></path>
+                <polygon id="Stroke-17" points="57 113 57 96 74 96"></polygon>
+                <path d="M64.3333333,24 L64.3333333,26.1428571 C64.3333333,27.3428571 63.3648,28.3157143 62.1701333,28.3157143 L23.8298667,28.3157143 C22.6352,28.3157143 21.6666667,27.3428571 21.6666667,26.1428571 L21.6666667,24 L11,24 L11,114 L57.9333333,114 L57.9333333,96.8571429 L75,96.8571429 L75,24 L64.3333333,24 Z" id="Stroke-19"></path>
+                <polygon id="Stroke-21" points="21 51 34 51 34 38 21 38"></polygon>
+                <polygon id="Stroke-23" points="21 75 34 75 34 62 21 62"></polygon>
+                <polygon id="Stroke-24" points="21 98 34 98 34 85 21 85"></polygon>
+                <path d="M45,38 L64,38" id="Stroke-25"></path>
+                <path d="M45,49 L58,49" id="Stroke-26"></path>
+                <path d="M45,62 L64,62" id="Stroke-27"></path>
+                <path d="M45,73 L58,73" id="Stroke-28"></path>
+                <path d="M45,88 L64,88" id="Stroke-29"></path>
+                <path d="M45,98 L49,98" id="Stroke-30"></path>
+            </g>
+        </g>
+    </g>
+</svg>

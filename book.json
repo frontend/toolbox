@@ -1,0 +1,20 @@
+{
+  "root": "docs",
+  "title": "Toolbox - Complete Frontend Atomic Workflow",
+  "author": "Antistatique",
+  "plugins": [
+    "search",
+    "prism",
+    "-highlight"
+  ],
+  "pluginsConfig": {
+    "fontSettings": {
+      "theme": "night"
+    },
+    "prism": {
+      "css": [
+        "../prism-theme-one-dark/prism-onedark.css"
+      ]
+    }
+  }
+}

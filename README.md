@@ -1,26 +1,41 @@
-# Toolbox
+# Toolbox - Documentation
 
-The documentation for the Toolbox Styleguide Generation
+This is the complete Toolbox documentation repository based on [Gitbook](https://github.com/GitbookIO/gitbook-cli).
 
-- **[Toolbox Reader](https://github.com/frontend/toolbox-reader)**: The React app to generate the styleguide based on your Twig components
-- **[Toolbox Generator](https://github.com/frontend/generator-toolbox)**: The Yeoman generator to scaffold your styleguide and add new components
-- **[Toolbox Utils](https://github.com/frontend/generator-utils)**: The build tasks and everything you need to have your styleguide built properly
+## Installation
 
-## Deploy
-
-To deploy the documentation on gh-pages, you will need [hugo (V0.30.2)] (https://hugo.io/getting-started/installing)
-
-```shell
-$ brew install hugo
+```bash
+$ yarn install 
 ```
 
-And don't forget to recover all sources from the git submodules, if that's the first time you checkout the repo
-```shell
-git submodule update --init --recursive
+## During doc writing
+
+```bash
+$ yarn start
 ```
 
-then, simply run:
+## During homepage development
 
-```shell
-$ ./_scripts/deploy.sh
+Because it's not Gitbook nativ, the custom homepage will replace the empty `README.md -> _book/index.html`. So, if you are working only on it, you can start a Browser Sync server using :
+
+```bash
+$ yarn serve
+```
+
+## During styles development
+
+```bash
+$ yarn styles
+```
+
+## To build the doc
+
+```bash
+$ yarn build
+```
+
+## To deploy the doc on the dedicated `gh-pages`
+
+```bash
+$ yarn deploy
 ```

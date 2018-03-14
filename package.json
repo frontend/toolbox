@@ -1,0 +1,26 @@
+{
+  "name": "toolbox-documentation",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:frontend/toolbox.git",
+  "author": "Antistatique",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.23.6",
+    "gh-pages": "^1.1.0",
+    "gitbook-cli": "^2.3.2",
+    "node-sass": "^4.7.2",
+    "prism-theme-one-dark": "^1.0.0",
+    "prismjs": "^1.11.0"
+  },
+  "scripts": {
+    "start": "gitbook install && gitbook serve",
+    "build_book": "gitbook install && gitbook build",
+    "build_index": "cp -rf docs/index.html _book/index.html",
+    "build_styles": "node-sass docs/styles/website.scss docs/styles/website.css",
+    "build": "yarn build_styles && yarn build_book && yarn build_index",
+    "styles": "node-sass --watch docs/styles/website.scss docs/styles/website.css",
+    "serve": "browser-sync start --server --files \"./**/*\" --port 3300 --directory",
+    "deploy": "yarn build && node ./.bin/deploy.js"
+  }
+}

@@ -1,0 +1,33 @@
+@charset 'utf-8';
+
+@import './inc/_variables';
+@import './inc/typography';
+@import './inc/icon';
+@import './inc/button';
+
+@import './inc/header';
+@import './inc/hero';
+@import './inc/animation';
+@import './inc/demo';
+@import './inc/features';
+@import './inc/bottom-ctas';
+@import './inc/footer';
+
+@import './inc/gitbook';
+
+.homepage {
+  background: $cinder;
+  background: linear-gradient(to top, $cinder 0%, darken($cinder, 4%) 100%);
+  color: $cadet-blue;
+}
+
+
+// Gitbook Fixes ==========================================
+
+.book { height: calc(100% - $header-height); }
+.summary .chapter:first-child { display: none; }
+@media only screen and (min-width: 768px) {
+  .book .book-summary { left: 0 !important; }
+  .book .book-body { left: 300px !important; }
+  .book-header .js-toolbar-action:first-child { display: none; }
+}

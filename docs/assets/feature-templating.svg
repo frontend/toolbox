@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="114px" height="116px" viewBox="0 0 114 116" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>83-construction-outline-</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-665.000000, -3089.000000)" stroke="#ABB2BF" stroke-width="2">
+            <g id="83-construction-outline-" transform="translate(666.000000, 3090.000000)">
+                <polygon id="Stroke-795" points="0 113 28 113 28 97 0 97"></polygon>
+                <polygon id="Stroke-796" points="28 113 56 113 56 97 28 97"></polygon>
+                <polygon id="Stroke-797" points="0 98 14 98 14 82 0 82"></polygon>
+                <polygon id="Stroke-798" points="98 98 112 98 112 82 98 82"></polygon>
+                <polygon id="Stroke-799" points="14 98 42 98 42 82 14 82"></polygon>
+                <polygon id="Stroke-800" points="42 98 70 98 70 82 42 82"></polygon>
+                <polygon id="Stroke-801" points="0 82 28 82 28 66 0 66"></polygon>
+                <polygon id="Stroke-802" points="28 82 56 82 56 66 28 66"></polygon>
+                <polygon id="Stroke-803" points="0 66 14 66 14 50 0 50"></polygon>
+                <polygon id="Stroke-804" points="98 66 112 66 112 50 98 50"></polygon>
+                <polygon id="Stroke-805" points="14 66 42 66 42 50 14 50"></polygon>
+                <polygon id="Stroke-806" points="42 66 70 66 70 50 42 50"></polygon>
+                <polygon id="Stroke-807" points="70 66 98 66 98 50 70 50"></polygon>
+                <polygon id="Stroke-808" points="0 50 28 50 28 34 0 34"></polygon>
+                <polygon id="Stroke-809" points="28 50 56 50 56 34 28 34"></polygon>
+                <polygon id="Stroke-810" points="0 34 14 34 14 18 0 18"></polygon>
+                <polygon id="Stroke-811" points="14 34 42 34 42 18 14 18"></polygon>
+                <path d="M85.9980084,1.47302946 L103.702361,44.199884 C104.795272,46.9859397 102.743317,50 99.7522984,50 L68.2477016,50 C65.256683,50 63.2047284,46.9859397 64.297639,44.199884 L81.6783142,1.47302946 C82.4495455,-0.49100982 85.2267772,-0.49100982 85.9980084,1.47302946 Z" id="Stroke-1251"></path>
+                <path d="M76,106 L82,106" id="Stroke-1252"></path>
+                <path d="M76,97 L82,97" id="Stroke-1253"></path>
+                <path d="M92.0129682,75.44 L93.6862278,71.29 C94.815174,68.488 92.7346874,66 90.0473921,66 L77.9515394,66 C75.2642442,66 73.1837575,68.488 74.3147197,71.29 L75.9879793,75.44 L76.0282989,75.524 C78.4172298,79.594 78.7135781,89.284 76.7863056,95.658 C76.3105354,96.836 76.016203,98.732 76.016203,100 L76.016203,106 C76.016203,110.418 79.626815,114 84.0801048,114 C88.5333945,114 92.1440066,110.418 92.1440066,106 L92.1440066,100 C92.1440066,98.732 91.8476582,96.836 91.3739039,95.658 C89.4446154,89.284 89.5837178,79.594 91.9706327,75.524 L92.0129682,75.44 Z" id="Stroke-1254"></path>
+                <path d="M64.6562098,44.2 L69,34 L56,34 L56,50 L68.7887709,50 C65.6600708,50 63.5122265,46.986 64.6562098,44.2 Z" id="Stroke-1255"></path>
+                <path d="M90,66 C92.6565812,66 94.7132892,68.49 93.5972461,71.292 L91.9431108,75.44 L91.9012592,75.524 C91.0163964,77.05 90.4444243,79.366 90.1753782,82 L112,82 L112,66 L90,66 Z" id="Stroke-1256"></path>
+                <path d="M76.0852112,75.524 L76.0430618,75.44 L74.3771554,71.292 C73.2531703,68.488 75.3245142,66 78,66 L56,66 L56,82 L77.8735517,82 C77.5744914,79.366 76.9763708,77.05 76.0852112,75.524 Z" id="Stroke-1257"></path>
+                <path d="M76.7481725,95.658 C77.9413739,91.674 78.2745924,86.392 77.7777577,82 L70,82 L70,98 L76.1635437,98 C76.2952349,97.15 76.4927716,96.298 76.7481725,95.658 Z" id="Stroke-1258"></path>
+                <path d="M90.1788557,82 C89.7335729,86.394 90.1234427,91.674 91.3069053,95.658 C91.5602218,96.3 91.7561462,97.15 91.8867624,98 L98,98 L98,82 L90.1788557,82 Z" id="Stroke-1259"></path>
+                <path d="M91.822,97 C91.932,97.712 92,98.422 92,99 L92,105 C92,109.418 88.418,113 84,113 L112,113 L112,97 L91.822,97 Z" id="Stroke-1260"></path>
+                <path d="M76,105 L76,99 C76,98.422 76.068,97.712 76.178,97 L56,97 L56,113 L84,113 C79.582,113 76,109.418 76,105 Z" id="Stroke-1261"></path>
+                <polygon id="Stroke-1262" points="80 66 88 66 88 50 80 50"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

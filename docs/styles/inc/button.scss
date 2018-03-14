@@ -1,0 +1,39 @@
+@charset 'utf-8';
+
+.homepage .btn {
+  display: inline-block;
+  padding: 0.65rem 1.4rem;
+  border-radius: 4px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+
+.homepage .btn-primary {
+  background: $cinder;
+  color: $cadet-blue;
+
+  &:hover { color: $harvest-gold; }
+}
+
+.homepage .btn-secondary {
+  background: $cadet-blue;
+  color: $cinder;
+
+  &:hover {
+    background: $white;
+    color: $cinder;
+  }
+}
+
+.homepage .btn-ternary {
+  background: $olivine;
+  color: $cinder;
+
+  &:hover {
+    color: $cinder;
+    background: $lavender;
+  }
+}
