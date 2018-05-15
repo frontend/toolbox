@@ -29,7 +29,7 @@ export default () => {
 ```javascript
 /* globals jQuery */
 
-import toggle from './components/atoms/toggle/toggle.js';
+import toggle from './atoms/toggle/toggle.js';
 
 const init = () => {
   toggle();
