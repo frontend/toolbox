@@ -34,7 +34,9 @@ It's a fatherly simple configuration JSON file which describes **where are locat
     "src": "node_modules/awesomplete/awesomplete.js",
     "dest": "build/js"
   }],
-  "bundles": {                                      ← If you need customs CSS/JS outputs 
+  ↓ If you need customs CSS/JS outputs.
+  ↓ This will overide the default entry points (base.xxx)
+  "bundles": {                                      
     "js": [
       {
         "name": "slider",

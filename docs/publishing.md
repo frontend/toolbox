@@ -1,6 +1,6 @@
 # Publishing
 
-Because sometimes **your styleguide project is suppose to be delivered elsewhere**, Toolbox offers you two ways of doing it combined under the `./publish.sh` file.
+Because sometimes **your styleguide project is supposed to be delivered elsewhere**, Toolbox offers you two ways of doing it combined under the `./publish.sh` file.
 
 ## Get started
 **If you don't have** it in your project, you can run the following command and choose the **publisher** :
