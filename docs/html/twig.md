@@ -47,8 +47,8 @@ Because each level is namespaced, you can simply define the name and the type of
 ./assets/components/molecules/search/search.twig
 ```twig
 <div>
-  {% include "atoms::input/input.twig" %}
-  {% include "atoms::button/button.twig" %}
+  {% include "@atoms/input/input.twig" %}
+  {% include "@atoms/button/button.twig" %}
 </div>
 ```
 
@@ -62,8 +62,8 @@ Because each level is namespaced, you can simply define the name and the type of
 ./assets/components/molecules/search/search.twig
 ```twig
 <div>
-  {% include "atoms::input/input.twig" with { placeholder: "search" } %}
-  {% include "atoms::button/button.twig" with { label: "go !" } %}
+  {% include "@atoms/input/input.twig" with { placeholder: "search" } %}
+  {% include "@atoms/button/button.twig" with { label: "go !" } %}
 </div>
 ```
 
