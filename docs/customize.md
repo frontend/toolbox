@@ -60,4 +60,4 @@ By default, the `./docs/index.{html, md}` will be rendered in the styleguide's h
 
 ### Next step
 
-You want to know a bit more about the people and the philosophy behind Toolbox, check [this last page](about.html).
+Now that you know everything (not like Jon), you can finally [publish](publishing.html) you project and use it everywhere !

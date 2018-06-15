@@ -35,3 +35,6 @@ And now, you want to **update also your related NPM package** :
 $ sh ./publish.sh 0.8.2 true
 ```
 
+### Next step
+
+You want to know a bit more about the people and the philosophy behind Toolbox, check [this last page](about.html).
