@@ -20,6 +20,7 @@
 * [JavaScript](javascript.md)
 * [Documentation](documentation.md)
 * [Customize](customize.md)
+* [Publishing](publishing.md)
 * [Behind Toolbox](about.md)
 
 // Build, deploy, etc
