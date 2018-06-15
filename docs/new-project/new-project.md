@@ -28,11 +28,10 @@ A series of **questions** will prompt :
     ◉ Create CHANGELOG.md and VERSION files
   ```
 
-4. You can choose between **SVG icons** (recommended) or old icon font.
+4. You can choose here what kind of **hierarchy and types of components** you want. It will be Atomic Design by default, but you can be more creative.
   ```
-  ? How should your icons be generated? (Use arrow keys)
-  ❯ I want the SVG icons goodness
-    Gimme good old font icons.
+  ? What kind of components hierarchy do you want to use ?
+  Separated by a less-than sign (<) (atoms<molecules<organisms)
   ```
 
 5. You can indicate **where you want to place your assets directory** (components, scss, js, icons, images,...). It can be in your root directory or inside a theme folder.

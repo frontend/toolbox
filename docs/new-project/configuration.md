@@ -33,7 +33,27 @@ It's a fatherly simple configuration JSON file which describes **where are locat
   "singles": [{                                      ← Single files list to move
     "src": "node_modules/awesomplete/awesomplete.js",
     "dest": "build/js"
-  }]
+  }],
+  "bundles": {                                      ← If you need customs CSS/JS outputs 
+    "js": [
+      {
+        "name": "slider",
+        "src": "components/molecules/slider/slider.js"
+      }
+    ],
+    "scss": [
+      {
+        "name": "critical",
+        "src": "components/critical.scss"
+      },
+      {
+        "name": "slider",
+        "src": "components/molecules/slider/slider.scss"
+      }
+    ]
+  },
+  "reader_path": "http://localhost/toolbox-env/toolbox-reader/build/static"
+  ↑ For local testing or offline only
 }
 ```
 
