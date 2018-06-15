@@ -3,6 +3,7 @@
 * [Homepage](README.md)
 * [Introduction](introduction.md)
 * [Installation](installation.md)
+* [Updates](updates.md)
 * [New project](new-project/new-project.md)
   * [File structure](new-project/file-structure.md)
   * [toolbox.json](new-project/configuration.md)
