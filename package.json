@@ -21,6 +21,6 @@
     "build": "yarn build_styles && yarn build_book && yarn build_index",
     "styles": "node-sass --watch docs/styles/website.scss docs/styles/website.css",
     "serve": "browser-sync start --server --files \"./**/*\" --port 3300 --directory",
-    "deploy": "yarn build && node ./.bin/deploy.js"
+    "deploy": "yarn build && sh ./.bin/deploy.sh"
   }
 }
