@@ -39,4 +39,5 @@ cp -r "$DIRECTORY-tmp"/* $DIRECTORY/
 rm -rf "$DIRECTORY-tmp"
 
 echo "Updating $BRANCH branch"
-cd $DIRECTORY && git add --all && git commit -m "Publishing to $BRANCH (deploy.sh)" git push origin $BRANCH --tags
+cd $DIRECTORY && git add --all && git commit -m "Publishing to $BRANCH (deploy.sh)"
+git push --force origin $BRANCH --tags
