@@ -12,11 +12,29 @@ This is an example of what can your `./docs` folder can look like :
     ├── index.md            ← Styleguide's homepage
     ├── typography.html     ← Documentation page
     ├── guidelines/         ← Sub directory
-        └── code.md         ← Sub documentation page
+    │   └── code.md         ← Sub documentation page
     └── CI/                 ← Sub directory
         ├── index.md        ← CI directory documentation page
         ├── deploy.md       ← Sub documentation page
         └── testing.html    ← Sub documentation page
+```
+
+## Custom order
+
+By default, **toolbox-utils will analyze the directory tree** of the `./docs` folder and provide a mirrored structure inside the styleguide.
+
+If, for any reason, **you want to change the order or keep only certain page**, you can add a **`summary.yml`** at the root of your `./docs` the create manually the structure of your styleguide documentation tab.
+
+For example in our case (see above), `./docs` :
+
+```yml
+- index.md
+- typography.html
+- CI:
+  - index.md
+  - testing.html
+- guidelines:
+  - code.md
 ```
 
 ### Next step
