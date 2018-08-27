@@ -22,6 +22,6 @@
 * [Customize](customize.md)
 * [Publishing](publishing.md)
 * [Behind Toolbox](about.md)
+* [Troubleshooting](troubleshooting.md)
 
 // Build, deploy, etc
-
