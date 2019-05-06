@@ -22,3 +22,15 @@ or
 $ npm update toolbox-utils
 ```
 
+## Updating Toolbox-Reader
+
+It's the easiest to update, you just need to build (and re-deploy your styleguide).
+
+From your **local** environment :
+
+```
+$ yarn build //recommended
+or
+$ npm run build
+```
+
