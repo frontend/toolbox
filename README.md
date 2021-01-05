@@ -1,5 +1,7 @@
 # Toolbox - Documentation
 
+## ⚠️ Deprecated in favor of [**Storybox**](https://github.com/frontend/storybox) ⚠️
+
 This is the complete Toolbox documentation repository based on [Gitbook](https://github.com/GitbookIO/gitbook-cli).
 
 ## Installation
