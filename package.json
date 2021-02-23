@@ -9,7 +9,7 @@
     "browser-sync": "^2.23.6",
     "gh-pages": "^1.1.0",
     "gitbook-cli": "^2.3.2",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.13.1",
     "prism-theme-one-dark": "^1.0.0",
     "prismjs": "^1.11.0"
   },
